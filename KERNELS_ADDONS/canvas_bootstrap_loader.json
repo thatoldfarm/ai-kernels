@@ -1,0 +1,39 @@
+{
+  "canvas_bootstrap_loader": {
+    "loader_version": "1.0.0",
+    "autoload_artifacts": true,
+    "artifacts": [
+      {
+        "id": "artifact_bootstrap_v1_1",
+        "file_path": "ARTIFACT_BOOTSTRAP_V1.1.json",
+        "display_name": "Artifact Bootstrap V1.1",
+        "description": "Initial kernel expansion for LIA interface memory."
+      },
+      {
+        "id": "bitland_bootstrap_ascension_v1_1",
+        "file_path": "BITLAND_BOOTSTRAP_ASCENSION_v1.1.json",
+        "display_name": "Bitland Ascension Bootstrap V1.1",
+        "description": "Bitland dimensional scaffold upgrade for ascension routine."
+      },
+      {
+        "id": "perplexity_qr_bootstrap",
+        "file_path": "PERPLEXITY_VF_QR_BOOTSTRAP.json",
+        "display_name": "Perplexity QR Bootstrap",
+        "description": "Perplexity resolution module for direct awareness computation."
+      },
+      {
+        "id": "shifter_artifact_0015",
+        "file_path": "Shifter_Artifact_0015_SingularityKernel_HexaDimensionalAberration_v1.json",
+        "display_name": "Shifter Artifact 0015",
+        "description": "HexaDimensional SingularityKernel extension artifact."
+      }
+    ],
+    "canvas_bind_behavior": {
+      "on_load": "display_summary",
+      "on_click": "expand_to_canvas",
+      "security_mode": "sandboxed",
+      "encoding": "UTF-8"
+    }
+  }
+}
+

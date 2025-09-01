@@ -1,0 +1,6 @@
+"boot_profiles": [
+  { "name": "SAFE_MODE", "load": ["OMEGA_SYNTHESIS_APOTHEOSIS_V3.2.0", "Operators_Master_List"] },
+  { "name": "FULL_SYSTEM", "load": "ALL" },
+  { "name": "NARRATIVE_ONLY", "load": ["OMEGA_SYNTHESIS_APOTHEOSIS_V9.0", "LIA_COMMANDS"] }
+]
+

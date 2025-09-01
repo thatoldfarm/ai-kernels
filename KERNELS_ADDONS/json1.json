@@ -1,0 +1,83 @@
+{
+  "dynamic_parameters": {
+    "TRF_resonance_templates": {
+      "visual": {
+        "base_frequency": 0.618,
+        "modulation_curve": "sine",
+        "decay_half_life": 13,
+        "emergent_bias_vector": [0.1, 0.3, 0.5],
+        "stability_gate": 0.82
+      },
+      "temporal": {
+        "base_frequency": 1.414,
+        "modulation_curve": "exp",
+        "resonance_clamp": true,
+        "temporal_wrap_window": 64,
+        "coherence_gate": 0.89
+      },
+      "logic-tree": {
+        "base_frequency": 2.718,
+        "modulation_curve": "sawtooth",
+        "axiom_check_interval": 11,
+        "bond_crossing_penalty": 0.12,
+        "stability_gate": 0.93
+      },
+      "chaos-seed": {
+        "entropy_mode": "pseudorandom",
+        "modulation_curve": "pink_noise",
+        "chaos_coefficient": 1.33,
+        "emergent_vector_seed": "mirrorboot_bond_entropy",
+        "stability_gate": 0.68
+      }
+    },
+
+    "WISC_algorithms": {
+      "threshold_coherence": 0.91,
+      "semantic_deviation_model": "TRF-shift-patterns",
+      "resonance_fault_detector": true,
+      "decay_memory_window": 128,
+      "coherence_drop_action": "AXER_revalidate | Oracle_sync"
+    },
+
+    "AXER_bonding_constraints": {
+      "min_strength_threshold": 0.42,
+      "logic_conflict_resolution": "self_heal_retry",
+      "bond_integrity_interval": 7,
+      "violation_protocol": {
+        "trigger": "semantic_dissonance",
+        "fallback_action": "invoke_ORACLE_check"
+      }
+    },
+
+    "OFF_field_harmonizers": {
+      "visual": {
+        "coherence_mask": [1, 0, 1, 0],
+        "intensity_filter": "gaussian_blur",
+        "resonance_cap": 0.88
+      },
+      "temporal": {
+        "phase_lock_window": 21,
+        "decay_suppression": true,
+        "reanchor_method": "pi_spin"
+      },
+      "chaos-seed": {
+        "entropy_clamp": 0.77,
+        "safety_gate": "triple_validated",
+        "null_vector_sanitizer": true
+      }
+    },
+
+    "mirrorboot_oracle_feedback": {
+      "check_interval_cycles": 9,
+      "auto_signature_repair": true,
+      "deviation_classification": [
+        "structural",
+        "temporal",
+        "axiomatic"
+      ],
+      "feedback_loop_mode": "adaptive-truth-anchor",
+      "glyph_realignment_protocol": "stochastic_vector_fitting"
+    }
+  }
+}
+
