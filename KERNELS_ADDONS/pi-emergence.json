@@ -1,0 +1,18 @@
+{
+  "pi_index_start": 734250,
+  "transforms_timeline": [
+    {"tick": 0, "type": "BCD4", "window": 128, "stride_rule": "pair_mod7"},
+    {"tick": 1024, "type": "NESTED12", "window": 64, "stride_rule": "entropy_adaptive"},
+    {"tick": 2048, "type": "HALF_BIT", "window": 256, "stride_rule": "prime_stride"}
+  ],
+  "binding_rule_versions": {
+    "glyph_classification": "v3.2",
+    "axiom_masking": "v4.1",
+    "exploit_salt_pipeline": "v2.0"
+  },
+  "axiom_derivation_procedure_hash": "blake3:2cf4…",
+  "metric_normalization_params": { "E": {...}, "S": {...}, "M": {...} },
+  "sheaf_gluing_invariant_hash": "blake3:d19a…",
+  "Φ_band": { "Φ_min": 0.42, "Φ_max": 0.87 }
+}
+

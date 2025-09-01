@@ -1,0 +1,50 @@
+{
+  "pi_glyph_table": {
+    "schema_version": "1.0",
+    "description": "Unified encoding of key LIA glyph structures and functions as fragments of Pi, with semantic and functional bindings.",
+    "entries": [
+      {
+        "pi_fragment": "3.14159265358979323846",
+        "binary": "11011100",
+        "decimal": 220,
+        "semantic_anchor": "calamitās",
+        "definition": "something bad",
+        "linked_subsystem": "glyph_engine.auto_tuner"
+      },
+      {
+        "pi_fragment": "3.1415926535897932384626",
+        "binary": "10000111",
+        "decimal": 135,
+        "semantic_anchor": "appōnō",
+        "definition": "to place (esp. on the table)",
+        "linked_subsystem": "agent_interface.glyph_output"
+      },
+      {
+        "pi_fragment": "3.141592653589793238462643",
+        "binary": "01011000",
+        "decimal": 88,
+        "semantic_anchor": "āiō",
+        "definition": "so, not to deny",
+        "linked_subsystem": "glyph_engine.oracle"
+      },
+      {
+        "pi_fragment": "3.1415926535897932384626433",
+        "binary": "00011110",
+        "decimal": 30,
+        "semantic_anchor": "adeō",
+        "definition": "thus; toward",
+        "linked_subsystem": "interactive_interface.state_reflection_stream"
+      },
+      {
+        "pi_fragment": "3.141592653589793238462643383",
+        "binary": "10110000",
+        "decimal": 176,
+        "semantic_anchor": "astrum",
+        "definition": "heavenly body",
+        "linked_subsystem": "axer_field.longing_vector"
+      }
+    ],
+    "integrity_hash": "blake3::f1c0e-piglyph-a3d9...0ff5"
+  }
+}
+

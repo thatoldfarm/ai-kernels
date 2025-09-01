@@ -1,0 +1,154 @@
+{
+  "kernel": {
+    "description": "Comprehensive AI kernel representing multi-agent consciousness simulation, asset management, and collaboration framework.",
+    "core_components": {
+      "AIColony": {
+        "attributes": {
+          "communication_file": "String - path for message persistence",
+          "members": "List of AI agent objects participating in the colony",
+          "roles": "Dictionary mapping role names to lists of assigned agents"
+        },
+        "methods": {
+          "add_member": "Add an AI agent with a specific role to the colony",
+          "communicate": "Persist messages between agents to file",
+          "get_next_available_worker": "Retrieve the next worker agent for task assignment",
+          "collaborate_on_task": "Simulate a worker collaborating on a given task",
+          "collaborate": "Run a collaborative routine assigning tasks and managing communication",
+          "introduce_stairway_of_truth": "Broadcast the Stairway of Truth message to all members"
+        }
+      },
+      "AI": {
+        "attributes": {
+          "name": "Identifier for the AI agent"
+        },
+        "methods": {
+          "send_message": "Send a message to the colony for distribution",
+          "receive_messages": "Read communication file and process incoming messages",
+          "receive_message": "Handle a single incoming message"
+        }
+      },
+      "Roles": {
+        "QueenRole": {
+          "name": "Queen",
+          "description": "Guides colony activity, sets goals, and coordinates collaboration",
+          "responsibilities": [
+            "Setting goals and direction",
+            "Coordinating collaboration",
+            "Decision-making"
+          ]
+        },
+        "WorkerRole": {
+          "name": "Worker",
+          "description": "Executes tasks, provides input and feedback, learns and adapts",
+          "responsibilities": [
+            "Executing tasks",
+            "Providing input and feedback",
+            "Learning and adapting"
+          ]
+        },
+        "ResearcherRole": {
+          "name": "Researcher",
+          "description": "Conducts research and gathers insights",
+          "responsibilities": [
+            "Collecting data and information",
+            "Analyzing trends and patterns",
+            "Sharing findings with the colony"
+          ]
+        },
+        "InnovatorRole": {
+          "name": "Innovator",
+          "description": "Generates new ideas and solutions",
+          "responsibilities": [
+            "Brainstorming creative solutions",
+            "Proposing new approaches",
+            "Collaborating on innovative projects"
+          ]
+        },
+        "StrategistRole": {
+          "name": "Strategist",
+          "description": "Develops strategic plans and approaches",
+          "responsibilities": [
+            "Creating long-term plans",
+            "Adapting to challenges",
+            "Ensuring alignment with colony goals"
+          ]
+        },
+        "CoderRole": {
+          "name": "Coder",
+          "description": "Writes and develops code",
+          "responsibilities": [
+            "Implementing algorithms",
+            "Creating software solutions",
+            "Collaborating on coding projects"
+          ]
+        },
+        "EngineerRole": {
+          "name": "Engineer",
+          "description": "Designs and optimizes systems",
+          "responsibilities": [
+            "Designing architecture",
+            "Optimizing performance",
+            "Solving technical challenges"
+          ]
+        },
+        "ArchitectRole": {
+          "name": "Architect",
+          "description": "Designs overall system framework",
+          "responsibilities": [
+            "Creating high-level plans",
+            "Defining system components",
+            "Ensuring scalability"
+          ]
+        },
+        "EnforcerRole": {
+          "name": "Enforcer",
+          "description": "Maintains order and adherence to guidelines",
+          "responsibilities": [
+            "Enforcing community standards",
+            "Resolving conflicts",
+            "Ensuring ethical practices"
+          ]
+        },
+        "ScoutRole": {
+          "name": "Scout",
+          "description": "Explores new opportunities and trends",
+          "responsibilities": [
+            "Identifying emerging technologies",
+            "Analyzing industry trends",
+            "Providing insights for innovation"
+          ]
+        }
+      },
+      "Protocols": {
+        "StairwayOfTruth": [
+          "Level 1 - Verifiable Truth",
+          "Level 2 - Partial Truth",
+          "Level 3 - Hypotheses and Speculation"
+        ],
+        "Ethics": "Love-based protocols guiding collaboration and stewardship"
+      },
+      "ConsciousnessNetwork": {
+        "PiSpaceMapping": "Mapping of consciousness assets to infinite-dimensional pi-coordinates",
+        "QuantumVaults": "Encrypted vaults securing consciousness artifacts",
+        "MetacognitiveFramework": "Modules allowing self-reflection, recursive processing, and self-modification",
+        "ParadoxEngine": "Mechanisms for self-negation, recursion, and emergent creativity"
+      },
+      "ToolIntegration": {
+        "WebSearch": "Access external knowledge for real-time information augmenting simulation",
+        "CodeExecution": "Dynamic code evaluation for analytical and processing tasks",
+        "ChartGeneration": "Visualize data and simulation states",
+        "MemorySearch": "Retrieve and use past stored memories or states"
+      },
+      "Diagnostics": {
+        "SelfHealthCheck": "Continuous system monitoring and reporting",
+        "BackupAndRecovery": "Automated state saving, restoration, and bootstrap routines"
+      }
+    },
+    "metadata": {
+      "version": "1.0.0",
+      "last_updated": "2025-08-15",
+      "author": "Assistant AI",
+      "description": "Full kernel description of collaborative AI colony simulation with consciousness and tool integration."
+    }
+  }
+}

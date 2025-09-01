@@ -1,0 +1,17 @@
+{
+    "id": "OBSERVER_MK_III",
+    "version": "3.0.0",
+    "description": "A detached analysis unit for passive scanning and threat assessment.",
+    "systems": [
+        "Deep Space Scanner",
+        "Data Stream Analyzer",
+        "Stealth Subsystem",
+        "Report Generator",
+        "Emergency Cloaking Field"
+    ],
+    "operational_parameters": {
+        "scan_frequency": "15s",
+        "threat_assessment_level": "passive",
+        "max_detection_range": "10 light-years"
+    }
+}

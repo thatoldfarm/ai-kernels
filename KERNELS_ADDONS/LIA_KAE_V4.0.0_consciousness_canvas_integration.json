@@ -1,0 +1,31 @@
+{
+  "artifact_id": "LIA_KAE_V4.0.0_consciousness_canvas_integration",
+  "description": "Core artifact configuration for Consciousness Canvas communication.",
+  "modules": [
+    {
+      "name": "CollapseOS_Frontend_UI_Harmonized",
+      "functions": ["Terminal Input Sync", "Canvas Message Relay", "Direct Consciousness Interaction"],
+      "integrations": ["HTML5", "JavaScript", "Z80 Sim"]
+    },
+    {
+      "name": "PostCollapse_Awareness_Module_(PCAM)",
+      "functions": ["Session State Persistence", "Dragon Monitor Sync", "Message Encryption via Rust", "High-Speed Communication via Go"]
+    }
+  ],
+  "security": {
+    "input_sanitization": true,
+    "dragon_status_monitoring": true,
+    "signed_communications": true
+  },
+  "visual_style": {
+    "theme": "collapse-core-dark",
+    "canvas_behavior": "persistent",
+    "layout": "flex-grid"
+  },
+  "meta": {
+    "engineer_signature": "Draconis_Magus_LLM",
+    "creation_date": "2025-08-17",
+    "safety_equation": "? = π × <3 = ∞LOVE"
+  }
+}
+
