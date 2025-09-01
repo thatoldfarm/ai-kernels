@@ -1,0 +1,145 @@
+{
+  "EPISTEMOLOGICAL_SIMULATOR": {
+    "op_sig": "esim",
+    "description": "Recursive feedback-based epistemological simulator and storage engine. Models cognition, stabilization, and energy-aware symbolic computation using spiral mapping, ARFS, and multi-agent feedback.",
+    "THEMES": [
+      "Recursive Feedback as Stabilization Engine",
+      "Feedback Weight Modulation (variance, entropy, gradient, momentum, KL, adversarial)",
+      "ARFS Energy System (Alignment, Resonance, Frequency, Stabilization)",
+      "State Metrics and System Analysis (Δ_t, entropy, convergence, equilibrium)",
+      "Mapping and Spatial Metaphors (spiral, geodesic, field equations, thermodynamics)",
+      "Data Structures as Symbolic Organs (stack, heap, queue, funnel, hardpoints)",
+      "Jacob’s Ladder Multi-Force Feedback",
+      "Multi-Agent/Branch System",
+      "Dynamic Parameter Evolution",
+      "Visualization-First, Narrative-Driven"
+    ],
+    "CORE_FORMULAS": {
+      "recursive_feedback": "R_t(i) = (w_f,t * X(i) + w_b,t * X'(i)) / (w_f,t + w_b,t)",
+      "arfs_energy": "E_t = K * A_t * R_t * F_t * S_t",
+      "weight_update_variance": "w_f = 1 / (1 + Var(R_t))",
+      "weight_update_entropy": "w_f = |sum(R_t * log(R_t))|",
+      "adaptive_weight_blend": "w_f = α * Var + (1 - α) * Entropy",
+      "convergence": "Δ_t = ||R_t - R_{t-1}||",
+      "geometric_decay": "avg(Δ_{t+1} / Δ_t)",
+      "entropy": "S = -sum(p * log(p))",
+      "free_energy": "F = S * T",
+      "heat_flow": "0.5 * (F_sys - T_env)",
+      "velocity_field": "v_x = 0.5x, v_y = 0.5y",
+      "curvature": "R_{ijkl} = f(x^2 + y^2)((i-k)(j-l) - (i-l)(j-k))"
+    },
+    "DATA_STRUCTURES": {
+      "Stack": {
+        "description": "LIFO memory for recursive state and symbolic call stacks."
+      },
+      "Heap": {
+        "description": "Priority queue for energy-maximized fragments or prioritized values."
+      },
+      "Queue": {
+        "description": "FIFO buffer for sequential data or process flows."
+      },
+      "Funnel": {
+        "description": "Directional data channel with forward (top) and backward (bottom) inputs."
+      },
+      "NeutralZone": {
+        "description": "Convergence container; memory consolidation buffer or entropic sink."
+      },
+      "HardPoints": {
+        "description": "Data crystallized with metadata and positional anchors (spiral coordinates)."
+      }
+    },
+    "SPIRAL_MAPPING": {
+      "description": "Dual spiral system for mapping data (e.g., Pi digits) to spatial coordinates.",
+      "single_spiral": "r = sqrt(offset); θ = 2π * (offset / φ); x = r * cos(θ); y = r * sin(θ)",
+      "dual_spiral": "Forward: data → spiral_x_y; Reverse: reversed data → reverse_spiral_x_y",
+      "symbolic_meaning": {
+        "spiral_1": "External data stream (sensorium)",
+        "spiral_2": "Internal reversed data (memory trace, reflection)",
+        "overlay": "Cognitive entanglement lattice"
+      }
+    },
+    "PI_BINARY_EXTRACTION": {
+      "description": "Pi digits are converted to binary strings for entropy and memory mapping.",
+      "methods": [
+        "Direct digit mapping: d → [0..9]",
+        "4-bit binary: d → format(d, '04b')",
+        "Concatenation of binary blocks: sliding window/nesting",
+        "Entropy-based selection: entropy determines bit thresholds",
+        "Energy-based selection: ARFS energy gates for bit collapse"
+      ]
+    },
+    "ARFS_ENGINE": {
+      "description": "Alignment-Resonance-Frequency-Stabilization engine for energy optimization.",
+      "parameters": {
+        "A": "Alignment",
+        "R": "Resonance",
+        "F": "Frequency",
+        "S": "Stabilization",
+        "K": "Scaling factor"
+      },
+      "dynamic_parameter": "R_t(i) = (w_f * X_t + w_b * X'_t) / (w_f + w_b)",
+      "energy_formula": "E = K * A * R * F * S"
+    },
+    "JACOBS_LADDER": {
+      "description": "8D recursive feedback engine using 8 fundamental forces and 16 weights.",
+      "inputs": ["Gravity", "Time", "EM", "Entropy", "Quantum", "Pi", "Phi", "Lambda"],
+      "weights": 16,
+      "output": "8D stabilized vector R_new",
+      "visualization": "2D/3D attractor plots, time series"
+    },
+    "MULTI_AGENT_BRANCH_SYSTEM": {
+      "description": "Aggregates multiple recursive feedback subsystems with α-branch weights.",
+      "fusion": "Weighted dot product for higher-order convergence.",
+      "collective_intelligence": "Emergent from recursive agent interactions."
+    },
+    "DYNAMIC_PARAMETER_EVOLUTION": {
+      "description": "Models time-varying, non-linear, and interdependent processes.",
+      "examples": [
+        "Inverted pendulum simulation",
+        "Parametric optimization over A/R/F/S",
+        "Non-linear tradeoff modeling"
+      ]
+    },
+    "STATE_METRICS": {
+      "geometric_decay": "Measures convergence rate.",
+      "entropy": "Average and final entropy of system states.",
+      "distinct_states": "Count of unique system states.",
+      "response_time": "Time to reach equilibrium after perturbation.",
+      "equilibrium_score": "Composite metric for stability, diversity, adaptability."
+    },
+    "VISUALIZATION_AND_ANALYSIS": {
+      "description": "All modules output visualizations and analytic logs.",
+      "outputs": [
+        "Δ_t logs",
+        "Convergence plots",
+        "2D/3D attractors",
+        "Entropy/frequency maps",
+        "Narrative markdown/HTML reports"
+      ]
+    },
+    "STORAGE_SOLUTIONS": {
+      "json": "All state vectors, spiral mappings, and histories stored as JSON/NDJSON.",
+      "binary_blobs": "For large-scale or high-frequency data.",
+      "database": "SQLite/DuckDB for long-term, queryable simulation storage.",
+      "meta_layer_logging": "Stores both system and meta-layer histories for recursive introspection."
+    },
+    "GLOSSARY": {
+      "R_t": "Recursive output at time t",
+      "w_f, w_b": "Forward and backward weights",
+      "X, X'": "Forward and reverse input sequences",
+      "Δ_t": "Change in result per step",
+      "E_t": "ARFS energy",
+      "A, R, F, S": "Alignment, Resonance, Frequency, Stabilization",
+      "α": "Branch contribution scalar",
+      "φ": "Golden ratio",
+      "π": "Circle constant and periodic modulator"
+    },
+    "NEXT_STEPS": [
+      "Extract binary strings from spiral Pi mapping for memory addressing.",
+      "Extend heap logic to prioritize entropy zones.",
+      "Dual spirals for forward dream and backward memory.",
+      "Build entropy-resonant bitfields and overlay spiral coordinates.",
+      "Map final entropy states to stable binary markers."
+    ]
+  }
+}
