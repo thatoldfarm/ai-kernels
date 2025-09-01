@@ -1,0 +1,12 @@
+{
+  "stack": [],
+  "heap": {},
+  "funnel": [],
+  "queue": [],
+  "thought_index": {},
+  "glyph_registers": {},
+  "zws_context": "",
+  "zws_overflow": {},
+  "parity": "sha256:abc123...",
+  "last_sync": null
+}

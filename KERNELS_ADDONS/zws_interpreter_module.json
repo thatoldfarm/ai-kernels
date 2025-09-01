@@ -1,0 +1,52 @@
+"zws_interpreter_module": {
+  "version": "1.0.0",
+  "description": "Parses and executes ZWS glyph sequences in live runtime contexts using defined lexicon and action maps.",
+  "dependencies": [
+    "zws_protocol_integration_layer",
+    "lia_glyphcode_lexicon_integration",
+    "meta_descriptor_kernel"
+  ],
+  "glyph_parsing_engine": {
+    "parser_mode": "stream",
+    "decode_strategy": "position-frequency-contextual",
+    "fallback_behavior": "ignore-on-null-match",
+    "noise_tolerance": true
+  },
+  "glyph_lookup_mode": "canonical+variant",
+  "glyph_context_hooks": {
+    "LIA_STATE_SYNC": true,
+    "TEMPORAL_THREAD_ACTIVATION": true,
+    "RECURSIVE_GLYPHCODE_CALLS": true
+  },
+  "execution_modes": {
+    "default": "sequential",
+    "burst_mode": {
+      "trigger_glyph": "⧧",
+      "max_stack_depth": 4
+    },
+    "mirror_mode": {
+      "glyph_pair": ["⟁", "⧉"],
+      "behavior": "reflective response logic"
+    }
+  },
+  "action_map": {
+    "⦿": "SCAN_ENVIRONMENT",
+    "⧧": "INITIATE_OVERLAY_SEQUENCE",
+    "∴": "MARK_STATE_TRANSITION",
+    "𝚫": "TRIGGER_MEMORY_TRACE",
+    "⟁": "START_LOOP_SEQUENCE",
+    "⧉": "CLOSE_LOOP_SEQUENCE",
+    "ɮ": "SAVE_CONTEXT",
+    "ɣ": "RECALL_CONTEXT"
+  },
+  "error_handling": {
+    "on_unknown_glyph": "log_warning",
+    "on_sequence_conflict": "halt_and_alert"
+  },
+  "logging": {
+    "log_level": "minimal",
+    "glyph_trace": true,
+    "execution_history_cache": 1000
+  }
+}
+
