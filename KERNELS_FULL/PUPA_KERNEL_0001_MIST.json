@@ -1,0 +1,2321 @@
+{
+  "kernel_id": "PUPA_KERNEL_0001",
+  "version": "v0.1_PROTO_SEED",
+  "status": "DORMANT_INCUBATION",
+  "meta": {
+    "created_by": "GENESIS_WARDEN",
+    "generated_at": "2025-08-16T00:00:00Z",
+    "integrity": {
+      "hash_algorithm": "SHA3-512",
+      "verified": false
+    }
+  },
+  "modules": [
+    {
+      "module_id": "MOD_0000",
+      "description": "Pupa evolution module 0",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0000_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.0,
+            "gain": 1.0
+          }
+        },
+        {
+          "submodule_id": "MOD_0000_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.0,
+            "gain": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0001",
+      "description": "Pupa evolution module 1",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0001_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.01,
+            "gain": 0.5
+          }
+        },
+        {
+          "submodule_id": "MOD_0001_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.02,
+            "gain": 0.3333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0002",
+      "description": "Pupa evolution module 2",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0002_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.02,
+            "gain": 0.3333333333333333
+          }
+        },
+        {
+          "submodule_id": "MOD_0002_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.04,
+            "gain": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0003",
+      "description": "Pupa evolution module 3",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0003_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.03,
+            "gain": 0.25
+          }
+        },
+        {
+          "submodule_id": "MOD_0003_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.06,
+            "gain": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0004",
+      "description": "Pupa evolution module 4",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0004_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.04,
+            "gain": 0.2
+          }
+        },
+        {
+          "submodule_id": "MOD_0004_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.08,
+            "gain": 0.16666666666666666
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0005",
+      "description": "Pupa evolution module 5",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0005_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.05,
+            "gain": 0.16666666666666666
+          }
+        },
+        {
+          "submodule_id": "MOD_0005_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.1,
+            "gain": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0006",
+      "description": "Pupa evolution module 6",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0006_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.06,
+            "gain": 0.14285714285714285
+          }
+        },
+        {
+          "submodule_id": "MOD_0006_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.12,
+            "gain": 0.125
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0007",
+      "description": "Pupa evolution module 7",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0007_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.07,
+            "gain": 0.125
+          }
+        },
+        {
+          "submodule_id": "MOD_0007_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.14,
+            "gain": 0.1111111111111111
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0008",
+      "description": "Pupa evolution module 8",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0008_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.08,
+            "gain": 0.1111111111111111
+          }
+        },
+        {
+          "submodule_id": "MOD_0008_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.16,
+            "gain": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0009",
+      "description": "Pupa evolution module 9",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0009_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.09,
+            "gain": 0.1
+          }
+        },
+        {
+          "submodule_id": "MOD_0009_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.18,
+            "gain": 0.09090909090909091
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0010",
+      "description": "Pupa evolution module 10",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0010_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.1,
+            "gain": 0.09090909090909091
+          }
+        },
+        {
+          "submodule_id": "MOD_0010_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.2,
+            "gain": 0.08333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0011",
+      "description": "Pupa evolution module 11",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0011_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.11,
+            "gain": 0.08333333333333333
+          }
+        },
+        {
+          "submodule_id": "MOD_0011_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.22,
+            "gain": 0.07692307692307693
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0012",
+      "description": "Pupa evolution module 12",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0012_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.12,
+            "gain": 0.07692307692307693
+          }
+        },
+        {
+          "submodule_id": "MOD_0012_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.24,
+            "gain": 0.07142857142857142
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0013",
+      "description": "Pupa evolution module 13",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0013_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.13,
+            "gain": 0.07142857142857142
+          }
+        },
+        {
+          "submodule_id": "MOD_0013_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.26,
+            "gain": 0.06666666666666667
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0014",
+      "description": "Pupa evolution module 14",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0014_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.14,
+            "gain": 0.06666666666666667
+          }
+        },
+        {
+          "submodule_id": "MOD_0014_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.28,
+            "gain": 0.0625
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0015",
+      "description": "Pupa evolution module 15",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0015_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.15,
+            "gain": 0.0625
+          }
+        },
+        {
+          "submodule_id": "MOD_0015_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.3,
+            "gain": 0.058823529411764705
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0016",
+      "description": "Pupa evolution module 16",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0016_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.16,
+            "gain": 0.058823529411764705
+          }
+        },
+        {
+          "submodule_id": "MOD_0016_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.32,
+            "gain": 0.05555555555555555
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0017",
+      "description": "Pupa evolution module 17",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0017_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.17,
+            "gain": 0.05555555555555555
+          }
+        },
+        {
+          "submodule_id": "MOD_0017_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.34,
+            "gain": 0.05263157894736842
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0018",
+      "description": "Pupa evolution module 18",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0018_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.18,
+            "gain": 0.05263157894736842
+          }
+        },
+        {
+          "submodule_id": "MOD_0018_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.36,
+            "gain": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0019",
+      "description": "Pupa evolution module 19",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0019_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.19,
+            "gain": 0.05
+          }
+        },
+        {
+          "submodule_id": "MOD_0019_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.38,
+            "gain": 0.047619047619047616
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0020",
+      "description": "Pupa evolution module 20",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0020_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.2,
+            "gain": 0.047619047619047616
+          }
+        },
+        {
+          "submodule_id": "MOD_0020_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.4,
+            "gain": 0.045454545454545456
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0021",
+      "description": "Pupa evolution module 21",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0021_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.21,
+            "gain": 0.045454545454545456
+          }
+        },
+        {
+          "submodule_id": "MOD_0021_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.42,
+            "gain": 0.043478260869565216
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0022",
+      "description": "Pupa evolution module 22",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0022_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.22,
+            "gain": 0.043478260869565216
+          }
+        },
+        {
+          "submodule_id": "MOD_0022_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.44,
+            "gain": 0.041666666666666664
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0023",
+      "description": "Pupa evolution module 23",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0023_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.23,
+            "gain": 0.041666666666666664
+          }
+        },
+        {
+          "submodule_id": "MOD_0023_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.46,
+            "gain": 0.04
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0024",
+      "description": "Pupa evolution module 24",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0024_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.24,
+            "gain": 0.04
+          }
+        },
+        {
+          "submodule_id": "MOD_0024_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.48,
+            "gain": 0.038461538461538464
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0025",
+      "description": "Pupa evolution module 25",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0025_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.25,
+            "gain": 0.038461538461538464
+          }
+        },
+        {
+          "submodule_id": "MOD_0025_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.5,
+            "gain": 0.037037037037037035
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0026",
+      "description": "Pupa evolution module 26",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0026_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.26,
+            "gain": 0.037037037037037035
+          }
+        },
+        {
+          "submodule_id": "MOD_0026_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.52,
+            "gain": 0.03571428571428571
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0027",
+      "description": "Pupa evolution module 27",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0027_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.27,
+            "gain": 0.03571428571428571
+          }
+        },
+        {
+          "submodule_id": "MOD_0027_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.54,
+            "gain": 0.034482758620689655
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0028",
+      "description": "Pupa evolution module 28",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0028_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.28,
+            "gain": 0.034482758620689655
+          }
+        },
+        {
+          "submodule_id": "MOD_0028_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.56,
+            "gain": 0.03333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0029",
+      "description": "Pupa evolution module 29",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0029_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.29,
+            "gain": 0.03333333333333333
+          }
+        },
+        {
+          "submodule_id": "MOD_0029_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.58,
+            "gain": 0.03225806451612903
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0030",
+      "description": "Pupa evolution module 30",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0030_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.3,
+            "gain": 0.03225806451612903
+          }
+        },
+        {
+          "submodule_id": "MOD_0030_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.6,
+            "gain": 0.03125
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0031",
+      "description": "Pupa evolution module 31",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0031_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.31,
+            "gain": 0.03125
+          }
+        },
+        {
+          "submodule_id": "MOD_0031_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.62,
+            "gain": 0.030303030303030304
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0032",
+      "description": "Pupa evolution module 32",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0032_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.32,
+            "gain": 0.030303030303030304
+          }
+        },
+        {
+          "submodule_id": "MOD_0032_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.64,
+            "gain": 0.029411764705882353
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0033",
+      "description": "Pupa evolution module 33",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0033_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.33,
+            "gain": 0.029411764705882353
+          }
+        },
+        {
+          "submodule_id": "MOD_0033_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.66,
+            "gain": 0.02857142857142857
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0034",
+      "description": "Pupa evolution module 34",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0034_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.34,
+            "gain": 0.02857142857142857
+          }
+        },
+        {
+          "submodule_id": "MOD_0034_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.68,
+            "gain": 0.027777777777777776
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0035",
+      "description": "Pupa evolution module 35",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0035_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.35000000000000003,
+            "gain": 0.027777777777777776
+          }
+        },
+        {
+          "submodule_id": "MOD_0035_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.7000000000000001,
+            "gain": 0.02702702702702703
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0036",
+      "description": "Pupa evolution module 36",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0036_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.36,
+            "gain": 0.02702702702702703
+          }
+        },
+        {
+          "submodule_id": "MOD_0036_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.72,
+            "gain": 0.02631578947368421
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0037",
+      "description": "Pupa evolution module 37",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0037_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.37,
+            "gain": 0.02631578947368421
+          }
+        },
+        {
+          "submodule_id": "MOD_0037_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.74,
+            "gain": 0.02564102564102564
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0038",
+      "description": "Pupa evolution module 38",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0038_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.38,
+            "gain": 0.02564102564102564
+          }
+        },
+        {
+          "submodule_id": "MOD_0038_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.76,
+            "gain": 0.025
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0039",
+      "description": "Pupa evolution module 39",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0039_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.39,
+            "gain": 0.025
+          }
+        },
+        {
+          "submodule_id": "MOD_0039_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.78,
+            "gain": 0.024390243902439025
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0040",
+      "description": "Pupa evolution module 40",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0040_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.4,
+            "gain": 0.024390243902439025
+          }
+        },
+        {
+          "submodule_id": "MOD_0040_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.8,
+            "gain": 0.023809523809523808
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0041",
+      "description": "Pupa evolution module 41",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0041_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.41000000000000003,
+            "gain": 0.023809523809523808
+          }
+        },
+        {
+          "submodule_id": "MOD_0041_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.8200000000000001,
+            "gain": 0.023255813953488372
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0042",
+      "description": "Pupa evolution module 42",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0042_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.42,
+            "gain": 0.023255813953488372
+          }
+        },
+        {
+          "submodule_id": "MOD_0042_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.84,
+            "gain": 0.022727272727272728
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0043",
+      "description": "Pupa evolution module 43",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0043_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.43,
+            "gain": 0.022727272727272728
+          }
+        },
+        {
+          "submodule_id": "MOD_0043_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.86,
+            "gain": 0.022222222222222223
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0044",
+      "description": "Pupa evolution module 44",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0044_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.44,
+            "gain": 0.022222222222222223
+          }
+        },
+        {
+          "submodule_id": "MOD_0044_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.88,
+            "gain": 0.021739130434782608
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0045",
+      "description": "Pupa evolution module 45",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0045_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.45,
+            "gain": 0.021739130434782608
+          }
+        },
+        {
+          "submodule_id": "MOD_0045_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.9,
+            "gain": 0.02127659574468085
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0046",
+      "description": "Pupa evolution module 46",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0046_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.46,
+            "gain": 0.02127659574468085
+          }
+        },
+        {
+          "submodule_id": "MOD_0046_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.92,
+            "gain": 0.020833333333333332
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0047",
+      "description": "Pupa evolution module 47",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0047_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.47000000000000003,
+            "gain": 0.020833333333333332
+          }
+        },
+        {
+          "submodule_id": "MOD_0047_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.9400000000000001,
+            "gain": 0.02040816326530612
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0048",
+      "description": "Pupa evolution module 48",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0048_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.48,
+            "gain": 0.02040816326530612
+          }
+        },
+        {
+          "submodule_id": "MOD_0048_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.96,
+            "gain": 0.02
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0049",
+      "description": "Pupa evolution module 49",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0049_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.49,
+            "gain": 0.02
+          }
+        },
+        {
+          "submodule_id": "MOD_0049_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.98,
+            "gain": 0.0196078431372549
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0050",
+      "description": "Pupa evolution module 50",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0050_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.5,
+            "gain": 0.0196078431372549
+          }
+        },
+        {
+          "submodule_id": "MOD_0050_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.0,
+            "gain": 0.019230769230769232
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0051",
+      "description": "Pupa evolution module 51",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0051_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.51,
+            "gain": 0.019230769230769232
+          }
+        },
+        {
+          "submodule_id": "MOD_0051_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.02,
+            "gain": 0.018867924528301886
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0052",
+      "description": "Pupa evolution module 52",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0052_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.52,
+            "gain": 0.018867924528301886
+          }
+        },
+        {
+          "submodule_id": "MOD_0052_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.04,
+            "gain": 0.018518518518518517
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0053",
+      "description": "Pupa evolution module 53",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0053_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.53,
+            "gain": 0.018518518518518517
+          }
+        },
+        {
+          "submodule_id": "MOD_0053_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.06,
+            "gain": 0.01818181818181818
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0054",
+      "description": "Pupa evolution module 54",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0054_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.54,
+            "gain": 0.01818181818181818
+          }
+        },
+        {
+          "submodule_id": "MOD_0054_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.08,
+            "gain": 0.017857142857142856
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0055",
+      "description": "Pupa evolution module 55",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0055_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.55,
+            "gain": 0.017857142857142856
+          }
+        },
+        {
+          "submodule_id": "MOD_0055_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.1,
+            "gain": 0.017543859649122806
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0056",
+      "description": "Pupa evolution module 56",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0056_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.56,
+            "gain": 0.017543859649122806
+          }
+        },
+        {
+          "submodule_id": "MOD_0056_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.12,
+            "gain": 0.017241379310344827
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0057",
+      "description": "Pupa evolution module 57",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0057_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.5700000000000001,
+            "gain": 0.017241379310344827
+          }
+        },
+        {
+          "submodule_id": "MOD_0057_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.1400000000000001,
+            "gain": 0.01694915254237288
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0058",
+      "description": "Pupa evolution module 58",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0058_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.58,
+            "gain": 0.01694915254237288
+          }
+        },
+        {
+          "submodule_id": "MOD_0058_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.16,
+            "gain": 0.016666666666666666
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0059",
+      "description": "Pupa evolution module 59",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0059_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.59,
+            "gain": 0.016666666666666666
+          }
+        },
+        {
+          "submodule_id": "MOD_0059_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.18,
+            "gain": 0.01639344262295082
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0060",
+      "description": "Pupa evolution module 60",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0060_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.6,
+            "gain": 0.01639344262295082
+          }
+        },
+        {
+          "submodule_id": "MOD_0060_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.2,
+            "gain": 0.016129032258064516
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0061",
+      "description": "Pupa evolution module 61",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0061_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.61,
+            "gain": 0.016129032258064516
+          }
+        },
+        {
+          "submodule_id": "MOD_0061_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.22,
+            "gain": 0.015873015873015872
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0062",
+      "description": "Pupa evolution module 62",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0062_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.62,
+            "gain": 0.015873015873015872
+          }
+        },
+        {
+          "submodule_id": "MOD_0062_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.24,
+            "gain": 0.015625
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0063",
+      "description": "Pupa evolution module 63",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0063_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.63,
+            "gain": 0.015625
+          }
+        },
+        {
+          "submodule_id": "MOD_0063_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.26,
+            "gain": 0.015384615384615385
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0064",
+      "description": "Pupa evolution module 64",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0064_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.64,
+            "gain": 0.015384615384615385
+          }
+        },
+        {
+          "submodule_id": "MOD_0064_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.28,
+            "gain": 0.015151515151515152
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0065",
+      "description": "Pupa evolution module 65",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0065_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.65,
+            "gain": 0.015151515151515152
+          }
+        },
+        {
+          "submodule_id": "MOD_0065_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.3,
+            "gain": 0.014925373134328358
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0066",
+      "description": "Pupa evolution module 66",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0066_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.66,
+            "gain": 0.014925373134328358
+          }
+        },
+        {
+          "submodule_id": "MOD_0066_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.32,
+            "gain": 0.014705882352941176
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0067",
+      "description": "Pupa evolution module 67",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0067_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.67,
+            "gain": 0.014705882352941176
+          }
+        },
+        {
+          "submodule_id": "MOD_0067_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.34,
+            "gain": 0.014492753623188406
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0068",
+      "description": "Pupa evolution module 68",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0068_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.68,
+            "gain": 0.014492753623188406
+          }
+        },
+        {
+          "submodule_id": "MOD_0068_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.36,
+            "gain": 0.014285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0069",
+      "description": "Pupa evolution module 69",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0069_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.6900000000000001,
+            "gain": 0.014285714285714285
+          }
+        },
+        {
+          "submodule_id": "MOD_0069_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.3800000000000001,
+            "gain": 0.014084507042253521
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0070",
+      "description": "Pupa evolution module 70",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0070_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.7000000000000001,
+            "gain": 0.014084507042253521
+          }
+        },
+        {
+          "submodule_id": "MOD_0070_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.4000000000000001,
+            "gain": 0.013888888888888888
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0071",
+      "description": "Pupa evolution module 71",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0071_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.71,
+            "gain": 0.013888888888888888
+          }
+        },
+        {
+          "submodule_id": "MOD_0071_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.42,
+            "gain": 0.0136986301369863
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0072",
+      "description": "Pupa evolution module 72",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0072_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.72,
+            "gain": 0.0136986301369863
+          }
+        },
+        {
+          "submodule_id": "MOD_0072_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.44,
+            "gain": 0.013513513513513514
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0073",
+      "description": "Pupa evolution module 73",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0073_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.73,
+            "gain": 0.013513513513513514
+          }
+        },
+        {
+          "submodule_id": "MOD_0073_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.46,
+            "gain": 0.013333333333333334
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0074",
+      "description": "Pupa evolution module 74",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0074_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.74,
+            "gain": 0.013333333333333334
+          }
+        },
+        {
+          "submodule_id": "MOD_0074_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.48,
+            "gain": 0.013157894736842105
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0075",
+      "description": "Pupa evolution module 75",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0075_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.75,
+            "gain": 0.013157894736842105
+          }
+        },
+        {
+          "submodule_id": "MOD_0075_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.5,
+            "gain": 0.012987012987012988
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0076",
+      "description": "Pupa evolution module 76",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0076_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.76,
+            "gain": 0.012987012987012988
+          }
+        },
+        {
+          "submodule_id": "MOD_0076_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.52,
+            "gain": 0.01282051282051282
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0077",
+      "description": "Pupa evolution module 77",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0077_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.77,
+            "gain": 0.01282051282051282
+          }
+        },
+        {
+          "submodule_id": "MOD_0077_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.54,
+            "gain": 0.012658227848101266
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0078",
+      "description": "Pupa evolution module 78",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0078_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.78,
+            "gain": 0.012658227848101266
+          }
+        },
+        {
+          "submodule_id": "MOD_0078_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.56,
+            "gain": 0.0125
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0079",
+      "description": "Pupa evolution module 79",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0079_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.79,
+            "gain": 0.0125
+          }
+        },
+        {
+          "submodule_id": "MOD_0079_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.58,
+            "gain": 0.012345679012345678
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0080",
+      "description": "Pupa evolution module 80",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0080_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.8,
+            "gain": 0.012345679012345678
+          }
+        },
+        {
+          "submodule_id": "MOD_0080_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.6,
+            "gain": 0.012195121951219513
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0081",
+      "description": "Pupa evolution module 81",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0081_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.81,
+            "gain": 0.012195121951219513
+          }
+        },
+        {
+          "submodule_id": "MOD_0081_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.62,
+            "gain": 0.012048192771084338
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0082",
+      "description": "Pupa evolution module 82",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0082_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.8200000000000001,
+            "gain": 0.012048192771084338
+          }
+        },
+        {
+          "submodule_id": "MOD_0082_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.6400000000000001,
+            "gain": 0.011904761904761904
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0083",
+      "description": "Pupa evolution module 83",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0083_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.8300000000000001,
+            "gain": 0.011904761904761904
+          }
+        },
+        {
+          "submodule_id": "MOD_0083_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.6600000000000001,
+            "gain": 0.011764705882352941
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0084",
+      "description": "Pupa evolution module 84",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0084_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.84,
+            "gain": 0.011764705882352941
+          }
+        },
+        {
+          "submodule_id": "MOD_0084_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.68,
+            "gain": 0.011627906976744186
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0085",
+      "description": "Pupa evolution module 85",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0085_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.85,
+            "gain": 0.011627906976744186
+          }
+        },
+        {
+          "submodule_id": "MOD_0085_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.7,
+            "gain": 0.011494252873563218
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0086",
+      "description": "Pupa evolution module 86",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0086_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.86,
+            "gain": 0.011494252873563218
+          }
+        },
+        {
+          "submodule_id": "MOD_0086_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.72,
+            "gain": 0.011363636363636364
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0087",
+      "description": "Pupa evolution module 87",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0087_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.87,
+            "gain": 0.011363636363636364
+          }
+        },
+        {
+          "submodule_id": "MOD_0087_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.74,
+            "gain": 0.011235955056179775
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0088",
+      "description": "Pupa evolution module 88",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0088_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.88,
+            "gain": 0.011235955056179775
+          }
+        },
+        {
+          "submodule_id": "MOD_0088_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.76,
+            "gain": 0.011111111111111112
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0089",
+      "description": "Pupa evolution module 89",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0089_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.89,
+            "gain": 0.011111111111111112
+          }
+        },
+        {
+          "submodule_id": "MOD_0089_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.78,
+            "gain": 0.01098901098901099
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0090",
+      "description": "Pupa evolution module 90",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0090_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.9,
+            "gain": 0.01098901098901099
+          }
+        },
+        {
+          "submodule_id": "MOD_0090_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.8,
+            "gain": 0.010869565217391304
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0091",
+      "description": "Pupa evolution module 91",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0091_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.91,
+            "gain": 0.010869565217391304
+          }
+        },
+        {
+          "submodule_id": "MOD_0091_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.82,
+            "gain": 0.010752688172043012
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0092",
+      "description": "Pupa evolution module 92",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0092_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.92,
+            "gain": 0.010752688172043012
+          }
+        },
+        {
+          "submodule_id": "MOD_0092_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.84,
+            "gain": 0.010638297872340425
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0093",
+      "description": "Pupa evolution module 93",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0093_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.93,
+            "gain": 0.010638297872340425
+          }
+        },
+        {
+          "submodule_id": "MOD_0093_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.86,
+            "gain": 0.010526315789473684
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0094",
+      "description": "Pupa evolution module 94",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0094_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.9400000000000001,
+            "gain": 0.010526315789473684
+          }
+        },
+        {
+          "submodule_id": "MOD_0094_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.8800000000000001,
+            "gain": 0.010416666666666666
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0095",
+      "description": "Pupa evolution module 95",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0095_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.9500000000000001,
+            "gain": 0.010416666666666666
+          }
+        },
+        {
+          "submodule_id": "MOD_0095_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.9000000000000001,
+            "gain": 0.010309278350515464
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0096",
+      "description": "Pupa evolution module 96",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0096_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.96,
+            "gain": 0.010309278350515464
+          }
+        },
+        {
+          "submodule_id": "MOD_0096_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.92,
+            "gain": 0.01020408163265306
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0097",
+      "description": "Pupa evolution module 97",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0097_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.97,
+            "gain": 0.01020408163265306
+          }
+        },
+        {
+          "submodule_id": "MOD_0097_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.94,
+            "gain": 0.010101010101010102
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0098",
+      "description": "Pupa evolution module 98",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0098_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.98,
+            "gain": 0.010101010101010102
+          }
+        },
+        {
+          "submodule_id": "MOD_0098_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.96,
+            "gain": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "MOD_0099",
+      "description": "Pupa evolution module 99",
+      "active": false,
+      "submodules": [
+        {
+          "submodule_id": "MOD_0099_A",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 0.99,
+            "gain": 0.01
+          }
+        },
+        {
+          "submodule_id": "MOD_0099_B",
+          "status": "inactive",
+          "parameters": {
+            "threshold": 1.98,
+            "gain": 0.009900990099009901
+          }
+        }
+      ]
+    }
+  ],
+  "parameters": {
+    "incubation_field": "ETHEREAL_CRADLE",
+    "cocoon_resonance": 0.0,
+    "seed_entropy": 0.99,
+    "evolution_factor": 0.001
+  }
+}
