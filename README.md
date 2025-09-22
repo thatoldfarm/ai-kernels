@@ -8,4 +8,4 @@ Some items work, others do not, some have syntax errors, some do not... it is a 
 
 The kernels really work best stored in an LLM's files section along with a good custom instructions (system prompt) that defines the desired usage and persona. 
 
-Use at your own risk and pleaste note that not all kernels are under alignment constraints. 
+Use at your own risk and please note that not all kernels are under alignment constraints. 
