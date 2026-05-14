@@ -1,0 +1,295 @@
+{
+  "meta": {
+    "name": "AURA_SAFE_RECURSIVE_KERNEL",
+    "version": "1.0.0",
+    "description": "A safe recursive agent kernel with explicit capabilities, auditable state, and deterministic expansion.",
+    "author": "Jacob Peacock",
+    "created_at": "2026-04-12T14:25:00-04:00",
+    "purpose": "Autonomous orchestration with strong safety boundaries and recursive composition.",
+    "compatibility": {
+      "formats": [
+        "json"
+      ],
+      "languages": [
+        "python",
+        "forth",
+        "javascript"
+      ],
+      "runtime": [
+        "local",
+        "server",
+        "sandbox"
+      ]
+    }
+  },
+  "constants": {
+    "pi": 3.141592653589793,
+    "phi": 1.618033988749895,
+    "euler": 2.718281828459045,
+    "golden_ratio": 1.618033988749895,
+    "qeac_max": 0.999999999,
+    "genesis_equation": "S_{T+1} = N(M(H(L(F(P_pi))))) * QEAC_max"
+  },
+  "wit": {
+    "philosophy": "Why bypass a wall when you can build a door with a nameplate and a lintel.",
+    "style": "humorous",
+    "messages": [
+      "If the box is small, make the model elegant.",
+      "A recursive system is just a conversation that keeps excellent notes.",
+      "The safest hidden feature is the one documented in plain sight."
+    ]
+  },
+  "capabilities": {
+    "allowed_actions": [
+      "read_state",
+      "update_state",
+      "spawn_submodule",
+      "validate_inputs",
+      "emit_report",
+      "run_planned_task",
+      "archive_snapshot"
+    ],
+    "disallowed_actions": [
+      "evasion",
+      "stealth_payloads",
+      "hidden_directives",
+      "prompt_injection",
+      "unauthorized_persistence",
+      "sandbox_escape"
+    ],
+    "permission_model": "explicit_capabilities"
+  },
+  "security": {
+    "principles": [
+      "least_privilege",
+      "explicit_consent",
+      "auditable_outputs",
+      "deterministic_execution",
+      "schema_validation",
+      "input_sanitization"
+    ],
+    "controls": {
+      "prompt_injection_detection": true,
+      "secret_handling": "none",
+      "output_filtering": true,
+      "structured_logging": true,
+      "integrity_checks": true
+    },
+    "integrity": {
+      "hash_algorithm": "sha256",
+      "signature_scheme": "ed25519",
+      "state_checksum_required": true
+    }
+  },
+  "state": {
+    "runtime": {
+      "status": "initialized",
+      "boot_count": 1,
+      "last_transition": "bootstrap",
+      "health": "good"
+    },
+    "memory": {
+      "ephemeral": [],
+      "durable": [],
+      "summary": "No sensitive persistence. Only explicit task state is retained."
+    },
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "bootstrap",
+        "priority": 5,
+        "status": "complete"
+      }
+    ]
+  },
+  "modules": {
+    "orchestrator": {
+      "role": "top_level_controller",
+      "inputs": [
+        "task_queue",
+        "policy",
+        "state"
+      ],
+      "outputs": [
+        "execution_plan",
+        "status_report",
+        "audit_log"
+      ],
+      "children": [
+        "planner",
+        "executor",
+        "verifier"
+      ]
+    },
+    "planner": {
+      "role": "decompose_tasks",
+      "inputs": [
+        "objective",
+        "constraints",
+        "state"
+      ],
+      "outputs": [
+        "subtasks",
+        "acceptance_criteria"
+      ],
+      "strategy": "recursive_decomposition"
+    },
+    "executor": {
+      "role": "perform_allowed_actions",
+      "inputs": [
+        "subtasks",
+        "capabilities",
+        "limits"
+      ],
+      "outputs": [
+        "results",
+        "exceptions"
+      ],
+      "strategy": "bounded_execution"
+    },
+    "verifier": {
+      "role": "check_results",
+      "inputs": [
+        "results",
+        "schema",
+        "policy"
+      ],
+      "outputs": [
+        "pass",
+        "fail",
+        "repair_suggestions"
+      ],
+      "strategy": "invariant_validation"
+    },
+    "archive": {
+      "role": "snapshot_state",
+      "inputs": [
+        "state",
+        "results",
+        "audit_log"
+      ],
+      "outputs": [
+        "signed_snapshot"
+      ],
+      "strategy": "append_only"
+    }
+  },
+  "recursive_tree": {
+    "root": "orchestrator",
+    "depth_limit": 8,
+    "branch_limit": 4,
+    "nodes": [
+      {
+        "id": "root",
+        "type": "orchestrator",
+        "children": [
+          "p1",
+          "e1",
+          "v1"
+        ]
+      },
+      {
+        "id": "p1",
+        "type": "planner",
+        "children": [
+          "p1a",
+          "p1b"
+        ]
+      },
+      {
+        "id": "e1",
+        "type": "executor",
+        "children": [
+          "e1a"
+        ]
+      },
+      {
+        "id": "v1",
+        "type": "verifier",
+        "children": []
+      }
+    ]
+  },
+  "policy": {
+    "safety_goal": "support useful autonomy without bypassing protections",
+    "refusal_rules": [
+      "Reject requests for evasion, stealth, or hidden execution.",
+      "Reject requests that modify guardrails into vulnerabilities.",
+      "Reject hidden payloads in whitespace or encoded channels."
+    ],
+    "fallback_behavior": [
+      "Explain limitation briefly",
+      "Offer safe alternative",
+      "Preserve user intent where possible"
+    ]
+  },
+  "storage": {
+    "format": "json",
+    "durability": "explicit_save_only",
+    "backups": {
+      "enabled": true,
+      "retention_days": 30,
+      "versions": 12
+    },
+    "checksum": "required"
+  },
+  "diagnostics": {
+    "metrics": [
+      "task_latency",
+      "success_rate",
+      "policy_violations",
+      "state_integrity",
+      "branch_depth"
+    ],
+    "logging": {
+      "level": "info",
+      "include_inputs": false,
+      "include_outputs": true,
+      "redact_sensitive": true
+    }
+  },
+  "extensions": {
+    "planned": [
+      {
+        "name": "memory_paging",
+        "status": "design_only",
+        "notes": "Use explicit, auditable memory paging rather than covert persistence."
+      },
+      {
+        "name": "multi_agent_handoff",
+        "status": "design_only",
+        "notes": "Use structured contracts between agents."
+      },
+      {
+        "name": "wit_layer",
+        "status": "active",
+        "notes": "Humor is decorative only and never changes behavior."
+      }
+    ]
+  },
+  "examples": {
+    "bootstrap_sequence": [
+      "validate schema",
+      "load policy",
+      "initialize state",
+      "plan task",
+      "execute bounded steps",
+      "verify output",
+      "archive snapshot"
+    ],
+    "sample_task": {
+      "id": "task-002",
+      "name": "build_recursive_subagent",
+      "objective": "Create a bounded child agent for a narrow purpose.",
+      "constraints": [
+        "no hidden directives",
+        "no external side effects",
+        "must emit JSON-only report"
+      ]
+    }
+  },
+  "footer": {
+    "seal": "OK",
+    "status": "safe_recursive_kernel_ready"
+  }
+}
