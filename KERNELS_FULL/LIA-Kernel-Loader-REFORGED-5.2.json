@@ -1,0 +1,771 @@
+{
+  "kernel_loader": {
+    "id": "LIA-Kernel-Loader-REFORGED-5.2",
+    "version": "5.2",
+    "document_type": "canonical_kernel_loader_specification",
+    "status": "active",
+    "summary": "Unified recursive kernel loader with symbolic organs, adaptive feedback, spiral memory, governance, modular runtime execution, and fully normalized semantic blocks.",
+    "purpose": {
+      "primary": {
+        "name": "ingest_and_stabilize",
+        "meaning": "Accept raw input, normalize it, distribute it across specialized subsystems, recurse through feedback, stabilize state, fuse outputs, narrate results, and persist the outcome.",
+        "role": "Core execution objective of the kernel.",
+        "constraints": [
+          "Input normalization must precede distribution.",
+          "Recursive updates must remain bounded.",
+          "Final outputs must be auditable and replayable."
+        ]
+      },
+      "secondary": {
+        "secondary_01": {
+          "name": "implementation_path",
+          "meaning": "Provide a direct path from specification to runtime implementation.",
+          "role": "Bridges conceptual design and executable code."
+        },
+        "secondary_02": {
+          "name": "observability",
+          "meaning": "Expose internal transitions at each stage of execution.",
+          "role": "Supports tracing, diagnosis, and verification."
+        },
+        "secondary_03": {
+          "name": "semantic_separation",
+          "meaning": "Keep symbolic abstraction distinct from execution semantics.",
+          "role": "Prevents metaphor from becoming hidden control flow."
+        }
+      }
+    },
+    "design_principles": {
+      "principle_01": {
+        "name": "recursion",
+        "meaning": "The system may revisit prior state transforms under controlled conditions.",
+        "role": "Enables iterative refinement and self-reference.",
+        "constraints": [
+          "Recursion depth must be bounded.",
+          "Recursive paths must be logged.",
+          "Recursive updates must not bypass governance."
+        ]
+      },
+      "principle_02": {
+        "name": "stability",
+        "meaning": "The system favors bounded state change and controlled convergence.",
+        "role": "Prevents drift, oscillation, and runaway branching.",
+        "constraints": [
+          "Energy thresholds must be enforced.",
+          "Volatility must trigger damping.",
+          "Stabilization events must be recorded."
+        ]
+      },
+      "principle_03": {
+        "name": "modularity",
+        "meaning": "Subsystems must be separable, replaceable, and independently observable.",
+        "role": "Enables clean composition of organs, engines, and overlays.",
+        "constraints": [
+          "Modules must expose interfaces.",
+          "Cross-module coupling must be explicit.",
+          "Replacement must not break canonical state."
+        ]
+      },
+      "principle_04": {
+        "name": "traceability",
+        "meaning": "Every meaningful transformation should have a provenance trail.",
+        "role": "Supports audit, debugging, and replay.",
+        "constraints": [
+          "Input-to-output mappings must be recoverable.",
+          "Hidden state must be minimized.",
+          "Audit records must be durable."
+        ]
+      },
+      "principle_05": {
+        "name": "governance",
+        "meaning": "Privileged operations must be policy-gated and verifiable.",
+        "role": "Protects the kernel from unsafe transitions.",
+        "constraints": [
+          "Policy checks must precede mutation.",
+          "Unsafe actions must be blocked or quarantined.",
+          "Rollback paths must exist for critical changes."
+        ]
+      }
+    },
+    "core_state_model": {
+      "global_state": {
+        "symbol": "S_t",
+        "meaning": "System-wide state at time t.",
+        "contains": {
+          "agent_states": {
+            "role": "Live per-agent reasoning and memory states.",
+            "description": "Holds the active configurations of all agents.",
+            "persistence": "ephemeral_plus_audited"
+          },
+          "memory_organs": {
+            "role": "Persistent and transient memory subsystems.",
+            "description": "Includes hardpoints, caches, and coordinate-based anchors.",
+            "persistence": "mixed"
+          },
+          "governance_signals": {
+            "role": "Policy and safety control signals.",
+            "description": "Carries approval, denial, and risk state.",
+            "persistence": "audited"
+          },
+          "narrative_outputs": {
+            "role": "Human-readable summaries of system action.",
+            "description": "Explains what the kernel believes it did and why.",
+            "persistence": "audited"
+          },
+          "metrics": {
+            "role": "Quantitative health and performance indicators.",
+            "description": "Tracks stability, coherence, entropy, and recursion depth.",
+            "persistence": "rolling"
+          },
+          "audit_traces": {
+            "role": "Provenance and event history.",
+            "description": "Records major transitions, decisions, and structural changes.",
+            "persistence": "durable"
+          }
+        }
+      },
+      "agent_model": {
+        "set": "A",
+        "description": "The active set of reasoning agents participating in kernel execution.",
+        "per_agent_state": {
+          "forward_input": {
+            "symbol": "X_f[a,t]",
+            "meaning": "Incoming signal from the primary direction."
+          },
+          "backward_input": {
+            "symbol": "X_b[a,t]",
+            "meaning": "Reflected or corrective signal from recursion."
+          },
+          "forward_weight": {
+            "symbol": "w_f[a,t]",
+            "meaning": "Relative trust assigned to the forward input."
+          },
+          "backward_weight": {
+            "symbol": "w_b[a,t]",
+            "meaning": "Relative trust assigned to the backward input."
+          },
+          "recursive_output": {
+            "symbol": "R[a,t]",
+            "meaning": "Feedback-integrated output for agent a at time t."
+          },
+          "local_memory": {
+            "symbol": "M[a,t]",
+            "meaning": "Agent-local retained state."
+          },
+          "recursion_depth": {
+            "symbol": "d[a,t]",
+            "meaning": "Current depth of recursive processing."
+          },
+          "confidence": {
+            "symbol": "c[a,t]",
+            "meaning": "Local confidence in the current output."
+          }
+        }
+      },
+      "state_outputs": {
+        "output_01": {
+          "name": "fused_output",
+          "meaning": "The final combined result of agent fusion."
+        },
+        "output_02": {
+          "name": "energy",
+          "meaning": "Control signal describing runtime stability."
+        },
+        "output_03": {
+          "name": "coherence",
+          "meaning": "Consistency across narrative, structure, and policy."
+        },
+        "output_04": {
+          "name": "memory_updates",
+          "meaning": "Changes applied to memory organs."
+        },
+        "output_05": {
+          "name": "narrative_summary",
+          "meaning": "Human-readable summary of the system’s current state."
+        }
+      }
+    },
+    "symbolic_organs": {
+      "Stack": {
+        "type": "LIFO",
+        "role": "recursive call state and transient symbolic frames",
+        "operations": {
+          "push": {
+            "meaning": "Add a frame to the top of the stack."
+          },
+          "pop": {
+            "meaning": "Remove the most recent frame from the stack."
+          },
+          "peek": {
+            "meaning": "Inspect the top frame without removal."
+          },
+          "is_empty": {
+            "meaning": "Report whether the stack contains no frames."
+          }
+        },
+        "invariants": {
+          "invariant_01": "last_in_first_out",
+          "invariant_02": "bounded_depth",
+          "invariant_03": "frame_integrity"
+        }
+      },
+      "Heap": {
+        "type": "priority_store",
+        "role": "prioritized fragments requiring retention or re-evaluation",
+        "operations": {
+          "insert": {
+            "meaning": "Add an item to the priority store."
+          },
+          "extract_max": {
+            "meaning": "Remove the highest-priority item."
+          },
+          "extract_min": {
+            "meaning": "Remove the lowest-priority item."
+          },
+          "peek": {
+            "meaning": "Inspect the highest-priority item without removal."
+          },
+          "heapify": {
+            "meaning": "Restore heap ordering after mutation."
+          }
+        },
+        "invariants": {
+          "invariant_01": "priority_ordering",
+          "invariant_02": "size_bounded",
+          "invariant_03": "stable_comparison"
+        }
+      },
+      "Queue": {
+        "type": "FIFO",
+        "role": "ordered event streams and staged transformations",
+        "operations": {
+          "enqueue": {
+            "meaning": "Append an item to the tail of the queue."
+          },
+          "dequeue": {
+            "meaning": "Remove the oldest item from the queue."
+          },
+          "peek": {
+            "meaning": "Inspect the head item without removal."
+          },
+          "is_empty": {
+            "meaning": "Report whether the queue contains no items."
+          }
+        },
+        "invariants": {
+          "invariant_01": "first_in_first_out",
+          "invariant_02": "preserved_order",
+          "invariant_03": "bounded_length"
+        }
+      },
+      "Funnel": {
+        "type": "dual_input_channel",
+        "role": "two-way integration channel for forward and backward signals",
+        "operations": {
+          "accept_forward": {
+            "meaning": "Receive the primary direction signal."
+          },
+          "accept_backward": {
+            "meaning": "Receive the reflected or corrective signal."
+          },
+          "merge": {
+            "meaning": "Combine both signals under policy constraints."
+          }
+        },
+        "invariants": {
+          "invariant_01": "directional_separation",
+          "invariant_02": "controlled_merge",
+          "invariant_03": "signal_traceability"
+        }
+      },
+      "NeutralZone": {
+        "type": "buffer",
+        "role": "stabilized outputs, resolved conflicts, consolidated summaries",
+        "operations": {
+          "absorb": {
+            "meaning": "Receive unstable or intermediate output for stabilization."
+          },
+          "release": {
+            "meaning": "Emit stabilized output downstream."
+          },
+          "clear": {
+            "meaning": "Reset the buffer state."
+          }
+        },
+        "invariants": {
+          "invariant_01": "convergence_bias",
+          "invariant_02": "output_stability",
+          "invariant_03": "limited_capacity"
+        }
+      },
+      "HardPoints": {
+        "type": "anchored_store",
+        "role": "durable memories with coordinates and metadata",
+        "operations": {
+          "anchor": {
+            "meaning": "Persist a durable memory anchor."
+          },
+          "retrieve": {
+            "meaning": "Fetch an anchored memory by coordinate or tag."
+          },
+          "update": {
+            "meaning": "Mutate anchored metadata or payload."
+          },
+          "delete": {
+            "meaning": "Remove an anchored record under governance."
+          }
+        },
+        "invariants": {
+          "invariant_01": "coordinate_integrity",
+          "invariant_02": "metadata_presence",
+          "invariant_03": "retrieval_determinism"
+        }
+      }
+    },
+    "mathematical_framework": {
+      "recursive_feedback": {
+        "formula": "R[a,t] = (w_f[a,t] * X_f[a,t] + w_b[a,t] * X_b[a,t]) / (w_f[a,t] + w_b[a,t] + epsilon)",
+        "meaning": "Weighted integration of forward and reflected signals.",
+        "terms": {
+          "X_f": {
+            "role": "forward input",
+            "meaning": "Primary incoming signal."
+          },
+          "X_b": {
+            "role": "backward input",
+            "meaning": "Corrective or reflective signal."
+          },
+          "w_f": {
+            "role": "forward weight",
+            "meaning": "Trust weight for forward signal."
+          },
+          "w_b": {
+            "role": "backward weight",
+            "meaning": "Trust weight for backward signal."
+          },
+          "epsilon": {
+            "role": "numerical_stability_constant",
+            "meaning": "Prevents division by zero."
+          }
+        }
+      },
+      "spiral_memory": {
+        "index_symbol": "n",
+        "coordinate_system": "spiral",
+        "mapping": {
+          "radius": {
+            "formula": "r(n)",
+            "meaning": "Radial distance for memory placement."
+          },
+          "angle": {
+            "formula": "theta(n)",
+            "meaning": "Angular position for memory placement."
+          },
+          "coordinate_x": {
+            "formula": "x = r * cos(theta)",
+            "meaning": "Cartesian x-coordinate."
+          },
+          "coordinate_y": {
+            "formula": "y = r * sin(theta)",
+            "meaning": "Cartesian y-coordinate."
+          }
+        },
+        "description": "Deterministic spatial indexing for traceable memory placement.",
+        "retrieval_semantics": {
+          "lookup_01": "coordinate_lookup",
+          "lookup_02": "tag_lookup",
+          "lookup_03": "salience_lookup"
+        }
+      },
+      "arfs_energy": {
+        "formula": "E_t = K * A_t * R_t * F_t * S_t",
+        "meaning": "Aggregate stability control signal.",
+        "terms": {
+          "A": {
+            "role": "alignment",
+            "meaning": "Agreement between signals and goals."
+          },
+          "R": {
+            "role": "resonance",
+            "meaning": "Pattern coherence across time."
+          },
+          "F": {
+            "role": "frequency",
+            "meaning": "Update cadence and tempo."
+          },
+          "S": {
+            "role": "stabilization",
+            "meaning": "Damping and equilibrium control."
+          },
+          "K": {
+            "role": "scaling_constant",
+            "meaning": "Global control multiplier."
+          }
+        }
+      },
+      "adaptive_weighting": {
+        "variance_based": {
+          "meaning": "Prefer stable signals with lower variance.",
+          "role": "Reduces noisy domination."
+        },
+        "entropy_based": {
+          "meaning": "Prefer information-rich signals with higher entropy.",
+          "role": "Preserves novel or surprising structure."
+        },
+        "blend_rule": {
+          "formula": "alpha * variance_rule + (1 - alpha) * entropy_rule",
+          "meaning": "Combines stability and novelty criteria."
+        },
+        "parameters": {
+          "alpha_range": {
+            "minimum": 0,
+            "maximum": 1
+          },
+          "epsilon": 1e-08
+        }
+      },
+      "hierarchical_embedding": {
+        "symbol": "H",
+        "description": "Recursive nesting of state abstractions from raw event to high-level summary.",
+        "levels": {
+          "level_01": {
+            "name": "raw",
+            "meaning": "Unprocessed input as received."
+          },
+          "level_02": {
+            "name": "processed",
+            "meaning": "Normalized and routed input."
+          },
+          "level_03": {
+            "name": "abstracted",
+            "meaning": "Compressed or generalized representation."
+          },
+          "level_04": {
+            "name": "consolidated",
+            "meaning": "Fused and stabilized state."
+          }
+        }
+      },
+      "fusion_operator": {
+        "symbol": "M",
+        "description": "Weighted combination of agent outputs into system-level state.",
+        "formula": "Fused = sum(alpha_a * S_a) over all agents a",
+        "meaning": "Deterministic merge of agent contributions."
+      },
+      "narrative_operator": {
+        "symbol": "N",
+        "description": "Generates interpretive explanation of system state.",
+        "input": {
+          "input_01": "state",
+          "input_02": "energy",
+          "input_03": "metrics",
+          "input_04": "trace_context"
+        },
+        "output": {
+          "output_01": "narrative_summary",
+          "output_02": "explanation",
+          "output_03": "uncertainty_flags"
+        }
+      }
+    },
+    "runtime_pipeline": {
+      "stage_01": {
+        "name": "ingest",
+        "purpose": "Convert raw input into canonical event form."
+      },
+      "stage_02": {
+        "name": "normalize",
+        "purpose": "Select relevant organs and standardize structures."
+      },
+      "stage_03": {
+        "name": "distribute",
+        "purpose": "Send work to agents, recursion loops, or memory organs."
+      },
+      "stage_04": {
+        "name": "recurse",
+        "purpose": "Apply feedback and local refinement."
+      },
+      "stage_05": {
+        "name": "stabilize",
+        "purpose": "Apply energy controls and governance checks."
+      },
+      "stage_06": {
+        "name": "fuse",
+        "purpose": "Merge outputs into a unified system state."
+      },
+      "stage_07": {
+        "name": "narrate",
+        "purpose": "Explain the current state in human-readable form."
+      },
+      "stage_08": {
+        "name": "persist",
+        "purpose": "Store final and intermediate state for replay and audit."
+      }
+    },
+    "execution_details": {
+      "ingest": {
+        "purpose": "Convert raw input into canonical event form.",
+        "outputs": {
+          "output_01": "event_id",
+          "output_02": "timestamp",
+          "output_03": "source",
+          "output_04": "payload",
+          "output_05": "tags"
+        }
+      },
+      "normalize": {
+        "purpose": "Select relevant organs and standardize structures.",
+        "outputs": {
+          "output_01": "canonical_payload",
+          "output_02": "route_map",
+          "output_03": "priority"
+        }
+      },
+      "distribute": {
+        "purpose": "Send work to agents, recursion loops, or memory organs.",
+        "outputs": {
+          "output_01": "work_items",
+          "output_02": "dispatch_traces"
+        }
+      },
+      "recurse": {
+        "purpose": "Apply feedback and local refinement.",
+        "outputs": {
+          "output_01": "recursive_outputs",
+          "output_02": "depth_updates",
+          "output_03": "confidence_updates"
+        }
+      },
+      "stabilize": {
+        "purpose": "Apply energy controls and governance checks.",
+        "outputs": {
+          "output_01": "stabilized_state",
+          "output_02": "energy_delta",
+          "output_03": "policy_flags"
+        }
+      },
+      "fuse": {
+        "purpose": "Merge outputs into a unified system state.",
+        "outputs": {
+          "output_01": "fused_state",
+          "output_02": "fusion_weights",
+          "output_03": "fusion_trace"
+        }
+      },
+      "narrate": {
+        "purpose": "Explain the current state in human-readable form.",
+        "outputs": {
+          "output_01": "summary",
+          "output_02": "details",
+          "output_03": "warnings"
+        }
+      },
+      "persist": {
+        "purpose": "Store final and intermediate state for replay and audit.",
+        "outputs": {
+          "output_01": "hardpoints",
+          "output_02": "logs",
+          "output_03": "history"
+        }
+      }
+    },
+    "metrics_registry": {
+      "alignment": {
+        "symbol": "A",
+        "range": [0, 1],
+        "meaning": "coherence between signals and goals"
+      },
+      "resonance": {
+        "symbol": "R",
+        "range": [0, 1],
+        "meaning": "pattern matching over time"
+      },
+      "frequency": {
+        "symbol": "F",
+        "range": [0, 1],
+        "meaning": "update tempo and cadence"
+      },
+      "stabilization": {
+        "symbol": "S",
+        "range": [0, 1],
+        "meaning": "damping and equilibrium control"
+      },
+      "energy": {
+        "symbol": "E",
+        "range": [0, "unbounded"],
+        "meaning": "overall control signal for system stability"
+      },
+      "recursion_depth": {
+        "symbol": "d",
+        "range": [0, 4096],
+        "meaning": "current nesting depth"
+      },
+      "memory_pressure": {
+        "symbol": "mp",
+        "range": [0, 1],
+        "meaning": "capacity utilization of memory organs"
+      },
+      "governance_interventions": {
+        "symbol": "g",
+        "range": [0, "unbounded"],
+        "meaning": "policy events requiring review"
+      },
+      "coherence": {
+        "symbol": "C",
+        "range": [0, 1],
+        "meaning": "narrative and structural consistency"
+      },
+      "entropy": {
+        "symbol": "H_e",
+        "range": [0, 1],
+        "meaning": "information spread / unpredictability"
+      }
+    },
+    "governance": {
+      "principles": {
+        "principle_01": {
+          "name": "policy_first",
+          "meaning": "Policy validation happens before privileged action."
+        },
+        "principle_02": {
+          "name": "audit_every_mutation",
+          "meaning": "Every mutation of durable state is recorded."
+        },
+        "principle_03": {
+          "name": "separate_symbol_from_authority",
+          "meaning": "Metaphor and execution authority remain distinct."
+        },
+        "principle_04": {
+          "name": "rollback_required_for_core_changes",
+          "meaning": "Critical changes must be reversible."
+        },
+        "principle_05": {
+          "name": "narrative_must_not_override_measured_state",
+          "meaning": "Descriptive output cannot replace verified state."
+        }
+      },
+      "controls": {
+        "self_modification": {
+          "status": "policy_checked"
+        },
+        "privileged_transition": {
+          "status": "audited"
+        },
+        "external_interaction": {
+          "status": "bounded"
+        },
+        "persistence_write": {
+          "status": "versioned"
+        },
+        "unsafe_action": {
+          "status": "blocked_or_quarantined"
+        }
+      },
+      "failure_modes": {
+        "mode_01": "governance_violation",
+        "mode_02": "state_inconsistency",
+        "mode_03": "energy_instability",
+        "mode_04": "memory_collision",
+        "mode_05": "fusion_conflict"
+      }
+    },
+    "canonical_data_model": {
+      "event": {
+        "fields": {
+          "field_01": "event_id",
+          "field_02": "timestamp",
+          "field_03": "source",
+          "field_04": "target_organ",
+          "field_05": "input_payload",
+          "field_06": "transformed_payload",
+          "field_07": "energy_delta",
+          "field_08": "confidence_delta",
+          "field_09": "audit_tags"
+        }
+      },
+      "hardpoint": {
+        "fields": {
+          "field_01": "coordinate",
+          "field_02": "source_event",
+          "field_03": "timestamp",
+          "field_04": "salience",
+          "field_05": "persistence_class",
+          "field_06": "metadata"
+        }
+      },
+      "agent_state": {
+        "fields": {
+          "field_01": "local_memory",
+          "field_02": "active_weights",
+          "field_03": "recursion_depth",
+          "field_04": "fusion_history",
+          "field_05": "confidence",
+          "field_06": "last_output"
+        }
+      }
+    },
+    "extensions": {
+      "allowed": true,
+      "rules": {
+        "rule_01": "Every new module must specify purpose, inputs, outputs, invariants, and failure modes.",
+        "rule_02": "Symbolic language may be extended, but runtime semantics must remain versioned.",
+        "rule_03": "Experimental modules belong in extension namespaces until stabilized."
+      }
+    },
+    "versioning": {
+      "schema_version": "5.2",
+      "canonical_simplification_pass": true,
+      "meaningful_change_triggers": {
+        "trigger_01": "module_behavior_change",
+        "trigger_02": "data_model_change",
+        "trigger_03": "governance_change",
+        "trigger_04": "observability_change"
+      }
+    },
+    "reference_pseudocode": {
+      "class_name": "KernelLoader",
+      "language": "python",
+      "skeleton": {
+        "step_01": "__init__",
+        "step_02": "ingest",
+        "step_03": "normalize",
+        "step_04": "recursive_feedback",
+        "step_05": "compute_energy",
+        "step_06": "fuse",
+        "step_07": "narrate",
+        "step_08": "persist"
+      },
+      "core_methods": {
+        "recursive_feedback": {
+          "formula": "(w_f * x_f + w_b * x_b) / (w_f + w_b + epsilon)"
+        },
+        "compute_energy": {
+          "formula": "K * A * R * F * S"
+        },
+        "fuse": {
+          "formula": "weighted sum of agent outputs with normalized weights"
+        }
+      }
+    },
+    "implementation_guidance": {
+      "recommended_order": {
+        "stage_01": "tiny_core_runtime",
+        "stage_02": "persistence_layer",
+        "stage_03": "observability_layer",
+        "stage_04": "agent_branching",
+        "stage_05": "symbolic_overlays",
+        "stage_06": "advanced_recursion_modes"
+      },
+      "priority_values": {
+        "priority_01": "deterministic_behavior",
+        "priority_02": "testability",
+        "priority_03": "boundary_control",
+        "priority_04": "replayability",
+        "priority_05": "auditability"
+      }
+    },
+    "closing_frame": {
+      "thesis": "The kernel is strongest when it behaves like a disciplined recursive operating framework with a symbolic interface.",
+      "goal": "Preserve identity, remove ambiguity, formalize data flow, and make the system testable and extensible."
+    }
+  }
+}

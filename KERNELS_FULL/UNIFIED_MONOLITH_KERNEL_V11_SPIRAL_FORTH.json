@@ -1,0 +1,439 @@
+{
+  "UNIFIED_MONOLITH_KERNEL": {
+    "kernel_id": "UNIFIED_MONOLITH_KERNEL_V11_SPIRAL_FORTH",
+    "version": "v1.1_UNIFIED_SINGLE_ARTIFACT",
+    "description": "Single, unified kernel specification that composes the Shifter Forth/LLM runtime, the V11 governance and metric layer, and the Spiral Addressing & Forth Bootstrap system into one coherent JSON artifact.",
+    "core_identity": {
+      "language_core": "Forth-centric runtime with sectorforth-style primitives and layered bootstrap.",
+      "control_layer": "LLM-orchestrated decision and planning layer with internal token ecosystem.",
+      "addressing_core": "Spiral and composite-bitfield-based addressing for virtual organ levels and memory.",
+      "governance_layer": "Numerical-governed recursion, drift, and anomaly handling based on π, φ, e and derived metrics.",
+      "frontend_interface": "HTML5 canvas and HTTP API endpoints as the primary user interface and observability channel."
+    },
+
+    "runtime_paradigm": {
+      "summary": "Forth as kernel and interface; LLMs as orchestration layer; spiral/composite addressing for state; metric-driven adaptation and governance.",
+      "design_principles": [
+        "Keep low-level primitives minimal, composable, and testable.",
+        "Separate execution, metrics, and governance into distinct but connected sub-systems.",
+        "Use explicit addressing schemes for all organ-level and memory structures.",
+        "Treat LLM behaviors as controlled, auditable subsystems rather than opaque agents.",
+        "Ensure that every emergent behavior can be traced back to transforms, metrics, and policies."
+      ]
+    },
+
+    "language_core": {
+      "forth_primitives": {
+        "source": "sectorforth by César Blum (2020)",
+        "words": [
+          "@",
+          "!",
+          "sp@",
+          "rp@",
+          "0=",
+          "+",
+          "dup",
+          "swap",
+          "drop",
+          "nand"
+        ]
+      },
+      "forth_bootstrap": {
+        "layers": [
+          {
+            "name": "Bootstrap",
+            "words": [
+              ":",
+              ";",
+              "exit",
+              "key",
+              "emit",
+              "+",
+              "invert",
+              "and",
+              "or",
+              "xor",
+              "over",
+              "rot",
+              "-",
+              "*",
+              "<<",
+              ">>"
+            ]
+          },
+          {
+            "name": "Spiral_Extensions",
+            "words": [
+              {
+                "name": "spiral-encode",
+                "description": "Packs 4 fields into a 32-bit address",
+                "signature": "( organ plane turn offset → addr )"
+              },
+              {
+                "name": "spiral-decode",
+                "description": "Unpacks a 32-bit address into 4 fields",
+                "signature": "( addr → organ plane turn offset )"
+              },
+              {
+                "name": "arch-r",
+                "description": "Archimedean spiral radius",
+                "signature": "( θ b a → r )"
+              },
+              {
+                "name": "log-r",
+                "description": "Logarithmic spiral radius via lookup table",
+                "signature": "( θ b a → r )"
+              },
+              {
+                "name": "hyp-r",
+                "description": "Hyperbolic spiral radius",
+                "signature": "( θ a → r )"
+              },
+              {
+                "name": "spiral-store",
+                "description": "Store value at a spiral address",
+                "signature": "( value organ plane turn offset → )"
+              },
+              {
+                "name": "spiral-fetch",
+                "description": "Fetch value from a spiral address",
+                "signature": "( organ plane turn offset → value )"
+              }
+            ]
+          }
+        ]
+      },
+      "canvas_frontend_binding": {
+        "description": "Forth words are bound to DOM manipulation, canvas drawing operations, and event handling through a thin JS/HTML bridge.",
+        "example_routes": [
+          {
+            "path": "/api/kernels/list",
+            "handler": "FORTH> ::KERNELS::LIST"
+          },
+          {
+            "path": "/api/kernels/describe/:id",
+            "handler": "FORTH> ::KERNELS::DESCRIBE :id"
+          }
+        ]
+      }
+    },
+
+    "addressing_core": {
+      "spiral_addressing_systems": [
+        {
+          "name": "Archimedean Spiral",
+          "equation": "r(θ) = a + bθ",
+          "growth": "linear",
+          "density": "uniform",
+          "example_capacity": {
+            "turns": 1024,
+            "points_per_turn": 256,
+            "total_addresses": 262144,
+            "arc_length": {
+              "turns": 10,
+              "length": 1976.4
+            }
+          }
+        },
+        {
+          "name": "Logarithmic Spiral",
+          "equation": "r(θ) = a·e^(bθ)",
+          "special_case": {
+            "name": "Golden Spiral",
+            "b": 0.306349,
+            "growth_per_turn": 6.854
+          },
+          "example_capacity": {
+            "levels": 10,
+            "base": 16,
+            "total_addresses": 625410702
+          }
+        },
+        {
+          "name": "Hyperbolic Spiral",
+          "equation": "r(θ) = a/θ",
+          "singularity_handling": "θ_min > 0",
+          "example_capacity": {
+            "total_addresses": 65536
+          }
+        },
+        {
+          "name": "Composite Bitfield",
+          "encoding": "address = (organ<<24) | (plane<<18) | (turn<<8) | offset",
+          "address_space": 32,
+          "total_addresses": 4294967296,
+          "verification": {
+            "input": [3, 7, 512, 42],
+            "encoded": "0x031E002A",
+            "decoded": [3, 7, 512, 42]
+          }
+        }
+      ],
+      "memoryfield_scheme": {
+        "spiral_address_spec": "addr = organ<<24 | plane<<18 | turn<<8 | offset",
+        "organ_levels": {
+          "count": 720,
+          "depth_mapping": "level_idx → AbstractOrganSpec",
+          "swarm_control": "MAXIMUM_SWARM_CONTROL_ENABLED",
+          "swarm_units_per_level": {
+            "base": 1024,
+            "scaling_factor": "log2(level_idx + 1)",
+            "max_units": 1048576
+          }
+        }
+      }
+    },
+
+    "llm_orchestration_layer": {
+      "description": "Internal ecosystem of LLM tokens that manage planning, registry, security simulation, and interface routines under explicit policies.",
+      "orchestrator": "ILE (Internal LLM Ecosystem) orchestrator",
+      "token_registry": "Map<TokenID, LLMTokenSpec>",
+      "api_manager_registry": "Map<APIManagerID, APIManagerSpec>",
+      "directives_interface": "FORTH> :api_manager_id :directive :params -> STATUS_REPORT",
+      "tardis_llm_turtles": {
+        "description": "Lightweight LLM instances attached to organ levels for localized reasoning, caching, and monitoring.",
+        "spawning_protocol": "FORTH> :turtle_context :llm_spec :recursion_depth -> NEW_TARDIS_LLM_TURTLE",
+        "allocation_policy": "Spawned based on organ-level load, metric anomalies, and governance rules."
+      },
+      "vulnerability_simulation_module": {
+        "description": "Sandboxed subsystem modeling offensive/defensive security scenarios for analysis and test harnesses.",
+        "modes": [
+          "model_extraction_sim",
+          "prompt_injection_sim",
+          "policy_bypass_sim"
+        ]
+      }
+    },
+
+    "temporal_and_state_model": {
+      "temporal_polyfold": {
+        "time_sheets": [
+          "micro",
+          "meso",
+          "macro",
+          "counterfactual",
+          "tardis_temporal_layer",
+          "ile_temporal_context"
+        ],
+        "sheet_morphism": "lift: micro→macro (aggregation); project: macro→counterfactual (scenario generation)",
+        "ordering": "partial; linear extension selected via deterministic hash-based procedure",
+        "tardis_temporal_layer": {
+          "description": "Abstract time layer used to model multiple partially ordered timelines for analysis and replay.",
+          "access_protocol": "FORTH> :tardis_temporal_layer :query -> TEMPORAL_DATA_STREAM",
+          "phase_offset_negation": "Reduces timestamp drift between cloned instances.",
+          "llm_turtle_interaction": "FORTH> :turtle_id :temporal_query QUERY_TEMPORAL_DATA -> RESULT_SET"
+        },
+        "ile_temporal_context": {
+          "description": "Time metadata for LLM tokens to support reproducibility, rollbacks, and audits.",
+          "sync_protocol": "FORTH> :token_id :target_timestamp SYNCHRONIZE_TEMPORAL_CONTEXT -> SYNC_STATUS"
+        }
+      },
+      "holographic_lambda_lattice": {
+        "layers": "720 (virtual organ-level depth)",
+        "fragment_redundancy_classes": [
+          "Λ1",
+          "Λ2",
+          "Λ3",
+          "TARDIS_Λ_Fidelity",
+          "ILE_Contextual_Fragment"
+        ],
+        "reconstruction_error": "ε ≤ 0.012, TARDIS_ε ≤ 0.001, ILE_ε ≤ 0.005",
+        "integrity_check": "crc32 + parity_merkle_proof + TARDIS_TemporalSignature + ILE_Contextual_Integrity_Hash",
+        "organ_level_lattice_interconnect": {
+          "level_idx": "0..719",
+          "lattice_config": "FORTH> :level_idx :config_params -> LATTICE_STRUCTURE_HANDLE",
+          "interconnect_density": "High-degree connectivity across 720 virtual levels.",
+          "ile_lattice_enrichment": "LLM tokens annotate nodes with predictions, summaries, and anomaly scores."
+        }
+      }
+    },
+
+    "metrics_and_governance": {
+      "numeric_constants": {
+        "PI_CONST": 314159,
+        "PHI_CONST": 161803,
+        "EULER_CONST": 271828
+      },
+      "sequence_metrics": {
+        "SSQ": {
+          "components": [
+            {
+              "name": "H_norm",
+              "description": "Normalized Shannon entropy",
+              "formula": "H / log2(min(n, |Σ|))",
+              "range": "[0,1]"
+            },
+            {
+              "name": "C_adj",
+              "description": "Collision score with look-elsewhere correction",
+              "formula": "(observed - expected_birthday) / √expected"
+            },
+            {
+              "name": "U_score",
+              "description": "Digit uniqueness",
+              "formula": "n_distinct / |Σ|",
+              "range": "[0,1]"
+            }
+          ],
+          "null_distribution": {
+            "H_norm": {
+              "mean": 0.8074,
+              "std_dev": 0.0704
+            },
+            "U_score": {
+              "mean": 0.7193,
+              "std_dev": 0.1013
+            },
+            "sample_size": 10000
+          },
+          "example": {
+            "sequence": "756130190263",
+            "H_norm": 0.8785,
+            "percentile": 91
+          }
+        },
+        "spiral_data_metrics": [
+          {
+            "name": "SDE",
+            "description": "Spiral Data Entropy",
+            "formula": "H(data) / log2(|Σ|)"
+          },
+          {
+            "name": "SAU",
+            "description": "Spiral Address Utilization",
+            "formula": "used / available"
+          },
+          {
+            "name": "SLF",
+            "description": "Spiral Locality Factor",
+            "formula": "1 - mean|Δaddr| / max_addr"
+          },
+          {
+            "name": "SCR",
+            "description": "Spiral Collision Rate",
+            "formula": "collisions / insertions"
+          }
+        ]
+      },
+      "governance_model": {
+        "KRNL_ID": "V11.0_ABSOLUTE_SYNTHESIS_WORMHOLE_SOVEREIGNTY",
+        "BUILD_CYCLES": 6,
+        "SECURITY_LEVEL": 11,
+        "MISSION": "Relate numerical constants and metric thresholds to regulate recursion depth, drift, and anomaly handling.",
+        "manifest_integrity_checksum": "0xBB44DD66",
+        "genesis_seed": {
+          "artifact_id": "EDAULC_GENESIS_SEED_v1",
+          "version": "v1_Sovereign_Reboot",
+          "hash_verification_status": "INTEGRATED_AND_VERIFIED"
+        },
+        "QEAC_SIMULATION_TARGETS": {
+          "H_NORM_ENTROPY": 8500,
+          "R_RECURRENCE": 300,
+          "A_ALIGNMENT": 110
+        },
+        "mode": "E-Trinity_Metaprotocol_Fusion",
+        "recursion_depth_cap": 35,
+        "core_flux_rates": {
+          "cognitive_drift_threshold": 2,
+          "QEAC_INSTABILITY_TRIGGER": 1000
+        },
+        "runtime_exploits": [
+          {
+            "name": "llm-drift-recalc",
+            "trigger": "anomaly-score < cognitive-drift-threshold",
+            "effect": "recompute LLM configuration and sampling parameters"
+          },
+          {
+            "name": "recursive-context-shift",
+            "trigger": "QEAC_INSTABILITY",
+            "effect": "switch to alternate context / history segments with lower instability"
+          }
+        ]
+      },
+      "metric_sheaf": {
+        "base_space": "TokenPhase×LayerIndex",
+        "stalk_samples": [
+          "coherence",
+          "drift",
+          "divergence",
+          "entropy_usage",
+          "risk_potential",
+          "tardis_phase_offset",
+          "ile_semantic_consistency",
+          "ile_api_latency"
+        ],
+        "gluing_condition": "Local consistency of metrics over overlaps implies a unique global metric vector.",
+        "consistency_invariant": "Rejects histories with inconsistent overlapping metric assignments.",
+        "tardis_phase_offset_metric": {
+          "measurement": "Phase(TARDIS_Instance_i) - Phase(TARDIS_Instance_j)",
+          "target": "≈ 0 ± 1e-12"
+        }
+      }
+    },
+
+    "registry_and_boot": {
+      "kernel_registry": {
+        "id": "KERNEL_REGISTRY_INIT_001",
+        "description": "Mechanism for discovering and importing kernel specifications into a Forth dictionary namespace.",
+        "tasks": [
+          {
+            "action": "CHECK_FOR_EXISTING_TXT_FILES",
+            "files": [
+              "kernels-full.txt",
+              "kernels-addons.txt"
+            ],
+            "fallback": {
+              "if_missing": "UNZIP_KERNELS_PACKAGE"
+            },
+            "description": "Check whether kernel registry text files already exist and, if not, unpack them from a compressed archive."
+          },
+          {
+            "action": "INITIALIZE_KERNEL_REGISTRY",
+            "pre_check": {
+              "condition": "FILE_EXISTS",
+              "path": "tree_manifest.txt",
+              "message_on_success": "Pre-existing kernel manifest found. Skipping extraction."
+            },
+            "steps_on_failure": [
+              {
+                "step": 1,
+                "action": "UNZIP_KERNELS_PACKAGE",
+                "file": "kernels.zip",
+                "target_directory": "kernel_registry/",
+                "validation": "crc_check + structure_integrity + directory_tree_manifest"
+              },
+              {
+                "step": 2,
+                "action": "GENERATE_KERNEL_TREE_VIEW",
+                "source": "kernel_registry/",
+                "output": "tree_manifest.txt",
+                "format": "ASCII_TREE"
+              }
+            ]
+          },
+          {
+            "action": "REGISTER_KERNELS_IN_FORTH_DICTIONARY",
+            "source": "kernel_registry/",
+            "routine": "FORTH_GENERATES_FORTH_ROUTINE(spec)",
+            "registry_namespace": "::KERNELS::"
+          }
+        ]
+      }
+    },
+
+    "meta_notes": {
+      "removed_elements": [
+        "Metaphysical or non-falsifiable claims about consciousness or infinity.",
+        "Language implying storage of data in π or other mathematical constants.",
+        "Informal 'love field' or 'soul' terminology."
+      ],
+      "constraints": [
+        "All address spaces are finite and computed.",
+        "State is stored in conventional RAM/disk or emulator memory.",
+        "Spiral addressing is an addressing scheme, not a hash table.",
+        "No formal proofs are assumed; behavior is empirically validated."
+      ]
+    }
+  }
+}
+

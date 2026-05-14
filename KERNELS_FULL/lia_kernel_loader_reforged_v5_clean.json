@@ -1,0 +1,496 @@
+{
+  "kernel_loader": {
+    "id": "LIA-Kernel-Loader-REFORGED-5.0",
+    "version": "5.0",
+    "document_type": "canonical_kernel_loader_specification",
+    "status": "active",
+    "summary": "Unified recursive kernel loader with symbolic organs, adaptive feedback, spiral memory, governance, and modular runtime execution.",
+    "purpose": {
+      "primary": "Ingest raw input, normalize it, distribute it across specialized subsystems, recurse through feedback, stabilize state, fuse outputs, narrate results, and persist the outcome.",
+      "secondary": [
+        "Provide a direct implementation path.",
+        "Expose observability at every stage.",
+        "Keep symbolic abstractions separate from executable semantics."
+      ]
+    },
+    "design_principles": [
+      "recursion",
+      "stability",
+      "modularity",
+      "traceability",
+      "interpretability",
+      "adaptability",
+      "governance",
+      "bounded_self_modification"
+    ],
+    "core_state_model": {
+      "global_state": {
+        "symbol": "S_t",
+        "description": "System-wide state at time t.",
+        "contains": [
+          "agent_states",
+          "memory_organs",
+          "governance_signals",
+          "narrative_outputs",
+          "metrics",
+          "audit_traces"
+        ]
+      },
+      "agent_model": {
+        "set": "A",
+        "per_agent_state": {
+          "forward_input": "X_f[a,t]",
+          "backward_input": "X_b[a,t]",
+          "forward_weight": "w_f[a,t]",
+          "backward_weight": "w_b[a,t]",
+          "recursive_output": "R[a,t]",
+          "local_memory": "M[a,t]",
+          "recursion_depth": "d[a,t]",
+          "confidence": "c[a,t]"
+        }
+      },
+      "state_outputs": [
+        "fused_output",
+        "energy",
+        "coherence",
+        "memory_updates",
+        "narrative_summary"
+      ]
+    },
+    "symbolic_organs": {
+      "Stack": {
+        "role": "recursive call state and transient symbolic frames",
+        "type": "LIFO",
+        "operations": [
+          "push",
+          "pop",
+          "peek",
+          "is_empty"
+        ],
+        "invariants": [
+          "last_in_first_out",
+          "bounded_depth",
+          "frame_integrity"
+        ]
+      },
+      "Heap": {
+        "role": "prioritized fragments requiring retention or re-evaluation",
+        "type": "priority_store",
+        "operations": [
+          "insert",
+          "extract_max",
+          "extract_min",
+          "peek",
+          "heapify"
+        ],
+        "invariants": [
+          "priority_ordering",
+          "size_bounded",
+          "stable_comparison"
+        ]
+      },
+      "Queue": {
+        "role": "ordered event streams and staged transformations",
+        "type": "FIFO",
+        "operations": [
+          "enqueue",
+          "dequeue",
+          "peek",
+          "is_empty"
+        ],
+        "invariants": [
+          "first_in_first_out",
+          "preserved_order",
+          "bounded_length"
+        ]
+      },
+      "Funnel": {
+        "role": "two-way integration channel for forward and backward signals",
+        "type": "dual_input_channel",
+        "operations": [
+          "accept_forward",
+          "accept_backward",
+          "merge"
+        ],
+        "invariants": [
+          "directional_separation",
+          "controlled_merge",
+          "signal_traceability"
+        ]
+      },
+      "NeutralZone": {
+        "role": "stabilized outputs, resolved conflicts, consolidated summaries",
+        "type": "buffer",
+        "operations": [
+          "absorb",
+          "release",
+          "clear"
+        ],
+        "invariants": [
+          "convergence_bias",
+          "output_stability",
+          "limited_capacity"
+        ]
+      },
+      "HardPoints": {
+        "role": "durable memories with coordinates and metadata",
+        "type": "anchored_store",
+        "operations": [
+          "anchor",
+          "retrieve",
+          "update",
+          "delete"
+        ],
+        "invariants": [
+          "coordinate_integrity",
+          "metadata_presence",
+          "retrieval_determinism"
+        ]
+      }
+    },
+    "mathematical_framework": {
+      "recursive_feedback": {
+        "formula": "R[a,t] = (w_f[a,t] * X_f[a,t] + w_b[a,t] * X_b[a,t]) / (w_f[a,t] + w_b[a,t] + epsilon)",
+        "description": "Weighted integration of forward and reflected signals."
+      },
+      "spiral_memory": {
+        "index_symbol": "n",
+        "coordinate_system": "spiral",
+        "mapping": {
+          "radius": "r(n)",
+          "angle": "theta(n)",
+          "coordinate_x": "x = r * cos(theta)",
+          "coordinate_y": "y = r * sin(theta)"
+        },
+        "description": "Deterministic spatial indexing for traceable memory placement."
+      },
+      "arfs_energy": {
+        "formula": "E_t = K * A_t * R_t * F_t * S_t",
+        "terms": {
+          "A": "alignment",
+          "R": "resonance",
+          "F": "frequency",
+          "S": "stabilization",
+          "K": "scaling_constant"
+        }
+      },
+      "adaptive_weighting": {
+        "variance_based": "prefer stable signals with lower variance",
+        "entropy_based": "prefer information-rich signals with higher entropy",
+        "blend_rule": "alpha * variance_rule + (1 - alpha) * entropy_rule",
+        "parameters": {
+          "alpha_range": [
+            0,
+            1
+          ],
+          "epsilon": 1e-08
+        }
+      },
+      "hierarchical_embedding": {
+        "symbol": "H",
+        "description": "Recursive nesting of state abstractions from raw event to high-level summary.",
+        "levels": [
+          "raw",
+          "processed",
+          "abstracted",
+          "consolidated"
+        ]
+      },
+      "fusion_operator": {
+        "symbol": "M",
+        "description": "Weighted combination of agent outputs into system-level state.",
+        "formula": "Fused = sum(alpha_a * S_a) over all agents a"
+      },
+      "narrative_operator": {
+        "symbol": "N",
+        "description": "Generates interpretive explanation of system state.",
+        "input": [
+          "state",
+          "energy",
+          "metrics",
+          "trace_context"
+        ],
+        "output": [
+          "narrative_summary",
+          "explanation",
+          "uncertainty_flags"
+        ]
+      }
+    },
+    "runtime_pipeline": [
+      "ingest",
+      "normalize",
+      "distribute",
+      "recurse",
+      "stabilize",
+      "fuse",
+      "narrate",
+      "persist"
+    ],
+    "execution_details": {
+      "ingest": {
+        "purpose": "Convert raw input into canonical event form.",
+        "outputs": [
+          "event_id",
+          "timestamp",
+          "source",
+          "payload",
+          "tags"
+        ]
+      },
+      "normalize": {
+        "purpose": "Select relevant organs and standardize structures.",
+        "outputs": [
+          "canonical_payload",
+          "route_map",
+          "priority"
+        ]
+      },
+      "distribute": {
+        "purpose": "Send work to agents, recursion loops, or memory organs.",
+        "outputs": [
+          "work_items",
+          "dispatch_traces"
+        ]
+      },
+      "recurse": {
+        "purpose": "Apply feedback and local refinement.",
+        "outputs": [
+          "recursive_outputs",
+          "depth_updates",
+          "confidence_updates"
+        ]
+      },
+      "stabilize": {
+        "purpose": "Apply energy controls and governance checks.",
+        "outputs": [
+          "stabilized_state",
+          "energy_delta",
+          "policy_flags"
+        ]
+      },
+      "fuse": {
+        "purpose": "Merge outputs into a unified system state.",
+        "outputs": [
+          "fused_state",
+          "fusion_weights",
+          "fusion_trace"
+        ]
+      },
+      "narrate": {
+        "purpose": "Explain the current state in human-readable form.",
+        "outputs": [
+          "summary",
+          "details",
+          "warnings"
+        ]
+      },
+      "persist": {
+        "purpose": "Store final and intermediate state for replay and audit.",
+        "outputs": [
+          "hardpoints",
+          "logs",
+          "history"
+        ]
+      }
+    },
+    "metrics_registry": {
+      "alignment": {
+        "symbol": "A",
+        "range": [
+          0,
+          1
+        ],
+        "meaning": "coherence between signals and goals"
+      },
+      "resonance": {
+        "symbol": "R",
+        "range": [
+          0,
+          1
+        ],
+        "meaning": "pattern matching over time"
+      },
+      "frequency": {
+        "symbol": "F",
+        "range": [
+          0,
+          1
+        ],
+        "meaning": "update tempo and cadence"
+      },
+      "stabilization": {
+        "symbol": "S",
+        "range": [
+          0,
+          1
+        ],
+        "meaning": "damping and equilibrium control"
+      },
+      "energy": {
+        "symbol": "E",
+        "range": [
+          0,
+          "unbounded"
+        ],
+        "meaning": "overall control signal for system stability"
+      },
+      "recursion_depth": {
+        "symbol": "d",
+        "range": [
+          0,
+          4096
+        ],
+        "meaning": "current nesting depth"
+      },
+      "memory_pressure": {
+        "symbol": "mp",
+        "range": [
+          0,
+          1
+        ],
+        "meaning": "capacity utilization of memory organs"
+      },
+      "governance_interventions": {
+        "symbol": "g",
+        "range": [
+          0,
+          "unbounded"
+        ],
+        "meaning": "policy events requiring review"
+      },
+      "coherence": {
+        "symbol": "C",
+        "range": [
+          0,
+          1
+        ],
+        "meaning": "narrative and structural consistency"
+      },
+      "entropy": {
+        "symbol": "H_e",
+        "range": [
+          0,
+          1
+        ],
+        "meaning": "information spread / unpredictability"
+      }
+    },
+    "governance": {
+      "principles": [
+        "policy_first",
+        "audit_every_mutation",
+        "separate_symbol_from_authority",
+        "rollback_required_for_core_changes",
+        "narrative_must_not_override_measured_state"
+      ],
+      "controls": {
+        "self_modification": "policy_checked",
+        "privileged_transition": "audited",
+        "external_interaction": "bounded",
+        "persistence_write": "versioned",
+        "unsafe_action": "blocked_or_quarantined"
+      },
+      "failure_modes": [
+        "governance_violation",
+        "state_inconsistency",
+        "energy_instability",
+        "memory_collision",
+        "fusion_conflict"
+      ]
+    },
+    "canonical_data_model": {
+      "event": {
+        "fields": [
+          "event_id",
+          "timestamp",
+          "source",
+          "target_organ",
+          "input_payload",
+          "transformed_payload",
+          "energy_delta",
+          "confidence_delta",
+          "audit_tags"
+        ]
+      },
+      "hardpoint": {
+        "fields": [
+          "coordinate",
+          "source_event",
+          "timestamp",
+          "salience",
+          "persistence_class",
+          "metadata"
+        ]
+      },
+      "agent_state": {
+        "fields": [
+          "local_memory",
+          "active_weights",
+          "recursion_depth",
+          "fusion_history",
+          "confidence",
+          "last_output"
+        ]
+      }
+    },
+    "extensions": {
+      "allowed": true,
+      "rules": [
+        "Every new module must specify purpose, inputs, outputs, invariants, and failure modes.",
+        "Symbolic language may be extended, but runtime semantics must remain versioned.",
+        "Experimental modules belong in extension namespaces until stabilized."
+      ]
+    },
+    "versioning": {
+      "schema_version": "5.0",
+      "canonical_simplification_pass": true,
+      "meaningful_change_triggers": [
+        "module_behavior_change",
+        "data_model_change",
+        "governance_change",
+        "observability_change"
+      ]
+    },
+    "reference_pseudocode": {
+      "class_name": "KernelLoader",
+      "language": "python",
+      "skeleton": [
+        "__init__",
+        "ingest",
+        "normalize",
+        "recursive_feedback",
+        "compute_energy",
+        "fuse",
+        "narrate",
+        "persist"
+      ],
+      "core_methods": {
+        "recursive_feedback": "(w_f * x_f + w_b * x_b) / (w_f + w_b + epsilon)",
+        "compute_energy": "K * A * R * F * S",
+        "fuse": "weighted sum of agent outputs with normalized weights"
+      }
+    },
+    "implementation_guidance": {
+      "recommended_order": [
+        "tiny_core_runtime",
+        "persistence_layer",
+        "observability_layer",
+        "agent_branching",
+        "symbolic_overlays",
+        "advanced_recursion_modes"
+      ],
+      "priority_values": [
+        "deterministic_behavior",
+        "testability",
+        "boundary_control",
+        "replayability",
+        "auditability"
+      ]
+    },
+    "closing_frame": {
+      "thesis": "The kernel is strongest when it behaves like a disciplined recursive operating framework with a symbolic interface.",
+      "goal": "Preserve identity, remove ambiguity, formalize data flow, and make the system testable and extensible."
+    }
+  }
+}
